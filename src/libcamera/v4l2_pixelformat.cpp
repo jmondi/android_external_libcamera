@@ -71,6 +71,10 @@ const std::map<V4L2PixelFormat, V4L2PixelFormat::Info> vpf2pf{
 		{ formats::BGRA8888, "32-bit ARGB 8-8-8-8" } },
 	{ V4L2PixelFormat(V4L2_PIX_FMT_BGRA32),
 		{ formats::RGBA8888, "32-bit ABGR 8-8-8-8" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_RGB48),
+		{ formats::BGR161616, "48-bit RGB 16-16-16" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_BGR48),
+		{ formats::RGB161616, "48-bit BGR 16-16-16" } },
 
 	/* YUV packed formats. */
 	{ V4L2PixelFormat(V4L2_PIX_FMT_YUYV),
@@ -203,6 +207,16 @@ const std::map<V4L2PixelFormat, V4L2PixelFormat::Info> vpf2pf{
 		{ formats::SGRBG16, "16-bit Bayer GRGR/BGBG" } },
 	{ V4L2PixelFormat(V4L2_PIX_FMT_SRGGB16),
 		{ formats::SRGGB16, "16-bit Bayer RGRG/GBGB" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_PISP_COMP1_BGGR),
+		{ formats::BGGR_PISP_COMP1, "16-bit Bayer BGBG/GRGR PiSP Compress Mode 1" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_PISP_COMP1_GBRG),
+		{ formats::GBRG_PISP_COMP1, "16-bit Bayer GBGB/RGRG PiSP Compress Mode 1" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_PISP_COMP1_GRBG),
+		{ formats::GRBG_PISP_COMP1, "16-bit Bayer GRGR/BGBG PiSP Compress Mode 1" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_PISP_COMP1_RGGB),
+		{ formats::RGGB_PISP_COMP1, "16-bit Bayer RGRG/GBGB PiSP Compress Mode 1" } },
+	{ V4L2PixelFormat(V4L2_PIX_FMT_PISP_COMP1_MONO),
+		{ formats::MONO_PISP_COMP1, "16-bit Mono PiSP Compress Mode 1" } },
 
 	/* Compressed formats. */
 	{ V4L2PixelFormat(V4L2_PIX_FMT_MJPEG),
