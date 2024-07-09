@@ -1,0 +1,1370 @@
+07-09 12:54:51.524   308   322 D libcamera: DEBUG Request request.cpp:122 Request(66:C:0/1:12970367428648877232)
+07-09 12:54:51.524   308   322 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367428648877232 completed with 1 streams
+07-09 12:54:51.525   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-09 12:54:51.525   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video28[26:out]: Dequeuing buffer 1
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:919 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Camera Process Request Start
+07-09 12:54:51.525   308   530 D libcamera: DEBUG Request request.cpp:361 Created request - cookie: 12970367428648879872
+07-09 12:54:51.525   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 2, timestamp: 309400287000
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:943 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Queueing request 12970367428648879872 with 1 streams
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:981 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest direct
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:755 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer...
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=124 numplanes=2 size=640x480 flags=1 numFds=3
+07-09 12:54:51.525   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:771 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer fd=38offset=0length=307200
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:771 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer fd=37offset=307200length=153600
+07-09 12:54:51.525   308   530 D libcamera: DEBUG Buffer framebuffer.cpp:346 Buffer is contiguous
+07-09 12:54:51.525   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video21[27:out]: Dequeuing buffer 1
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:994 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': 0 - (640x480)[0x00000023] -> (640x480)[NV12] (direct)
+07-09 12:54:51.525   308   530 D libcamera: DEBUG HAL camera_device.cpp:1026 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle streams
+07-09 12:54:51.525   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video26[28:cap]: Dequeuing buffer 1
+07-09 12:54:51.526   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video22[29:out]: Dequeuing buffer 0
+07-09 12:54:51.526   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video27[30:cap]: Dequeuing buffer 0
+07-09 12:54:51.526   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:730 queueRequestDevice: New request sequence: 67
+07-09 12:54:51.526   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 43 for ISP Output1
+07-09 12:54:51.526   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video25[25:cap]: Queueing buffer 14
+07-09 12:54:51.527   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.988760963
+07-09 12:54:51.527   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.988520926
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:919 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Camera Process Request Start
+07-09 12:54:51.527   308   308 D libcamera: DEBUG Request request.cpp:361 Created request - cookie: 12970367428648881808
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:943 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Queueing request 12970367428648881808 with 1 streams
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:976 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1026 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle streams
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1040 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': 0 - (640x480)[0x00000021] -> (640x480)[NV12] (mapped)
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1064 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped getBuffer()
+07-09 12:54:51.527   308   308 E libcamera: ERROR HAL camera_stream.cpp:234 CameraStream::getBuffer allocate: usage=51
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:102 Private::allocate: pixelFormat=35 size=640x480 usage=51
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:128 Private::allocate: created fd=138 pixelFormat=NV12 stride=4096 numPlanes=2 numFds=3 numInts=32 dmaLength=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=141 len=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=142 len=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=143 len=4096
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:152 Private::allocate: planeInfo i=0 offset=0 size=307200
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:152 Private::allocate: planeInfo i=1 offset=307200 size=153600
+07-09 12:54:51.528   308   308 D libcamera: DEBUG Buffer framebuffer.cpp:346 Buffer is contiguous
+07-09 12:54:51.528   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:730 queueRequestDevice: New request sequence: 68
+07-09 12:54:51.529   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 19 for ISP Output1
+07-09 12:54:51.529   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video25[25:cap]: Queueing buffer 15
+07-09 12:54:51.529   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.986589315
+07-09 12:54:51.567   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1357 Frame start 74
+07-09 12:54:51.568   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:240 frame 74 started
+07-09 12:54:51.568   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Analogue Gain to 524 at index 73
+07-09 12:54:51.568   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Exposure to 6515 at index 73
+07-09 12:54:51.568   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Vertical Blanking to 5673 at index 74
+07-09 12:54:51.568   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.947237537
+07-09 12:54:51.575   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video4[19:cap]: Dequeuing buffer 2
+07-09 12:54:51.576   308   322 D libcamera: DEBUG Timer timer.cpp:93 Starting timer 0xb400007566e8cd30: deadline 0:05:10.452960352
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Image buffer dequeue, buffer id 3, timestamp: 309444792000
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Analogue Gain to 524 at index 71
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Exposure to 6515 at index 71
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Vertical Blanking to 5673 at index 71
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Horizontal Blanking to 3680 at index 71
+07-09 12:54:51.576   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video7[20:out]: Dequeuing buffer 2
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Config buffer dequeue, buffer id 3, timestamp: 309444792000
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Config
+07-09 12:54:51.576   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 5 for CFE Config
+07-09 12:54:51.577   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video7[20:out]: Queueing buffer 4
+07-09 12:54:51.577   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video6[21:cap]: Dequeuing buffer 2
+07-09 12:54:51.577   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Stats buffer dequeue, buffer id 3, timestamp: 309444792000
+07-09 12:54:51.577   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.998658759
+07-09 12:54:51.577   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video1[22:cap]: Dequeuing buffer 2
+07-09 12:54:51.577   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Embedded buffer dequeue, buffer id 3, timestamp: 309444792000
+07-09 12:54:51.578   308   322 D libcamera: DEBUG RPI pisp.cpp:2286 Signalling IPA processStats and prepareIsp: Bayer buffer id: 3 Stats buffer id: 3 Embedded buffer id: 3
+07-09 12:54:51.578   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.997851907
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1283 Metadata - Exposure: 59996.89us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG IPARPI cam_helper_imx708.cpp:113 Embedded buffer size: 28800
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG IPARPI cam_helper.cpp:251 Metadata updated - Exposure: 59748.25us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1 Temperature: 25
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiLux lux.cpp:96 : estimated lux 112.317
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:370 frame_phase 5
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:293 process for channel 0
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:300 Save DeviceStatus and stats for channel 0
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:592 ev 1 fixedShutter 0.00us fixedAnalogueGain 0
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:629 exposureMode normal constraintMode normal meteringMode centre-weighted
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.156154 target 0.160562 gives gain 1.02168
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.159441 target 0.160562 gives gain 1.02245
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:759 Constraint has target_Y 0.5 giving gain 0.715494
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:771 Final gain 1.02245 (target_Y 0.160562 ev 1 base_ev 1)
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:807 Target totalExposure 125111.58us
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:907 After filtering, totalExposure 123068.39us no dg 123068.39us
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:813 Total exposure before channel constraints 123068.39us
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:841 Total exposure after channel constraints 123068.39us
+07-09 12:54:51.578   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:856 after AWB, target dg 1 gain 1.02245 target_Y 0.160562
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:873 Digital gain 1 desaturate? 0
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:875 Target totalExposureNoDG 123068.39us
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:949 Divided up shutter and gain are 60000.00us and 2.05114
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:989 Output written, total exposure requested is 123068.39us
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:991 Camera exposure update: shutter time 60000.00us analogue gain 2.05114
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:429 frame_phase 5
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:109 Move histogram point 751.123 to 983.04
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:113 Final values 983.04 -> 983.04
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:130 Move histogram point 23721.7 to 62259.2
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:134 Final values 60259.2 -> 62259.2
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 59996.89us (Shutter lines: 6515, AGC requested 60000.00us) Gain: 2.05114 (Gain Code: 524)
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiDpc dpc.cpp:50 strength 1
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiNoise noise.cpp:77 constant 0 slope 1.32805
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiGeq geq.cpp:75 offset 452 slope 0.00462848 (analogue gain 2.048 lux 112.317)
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:119 Noise profile: constant 0 slope 1.32805
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:134 const 0 slope 2.12487 str 0.5 const2 0 slope2 4.24975
+07-09 12:54:51.579   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Vertical Blanking to 5673 at index 75
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:154 programmed tdn threshold 0.05 constant 0 slope 1.06244
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:165 programmed cdn threshold 265.609 strength 0.3
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:340 frame_count 10 speed 0.05
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:359 Using AWB gains r 1.3264 g 1 b 2.97082
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:274 prepare for channel 0
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:488 Want total exposure 123068.39us
+07-09 12:54:51.579   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Exposure to 6515 at index 75
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:494 Actual exposure 122364.41us
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:495 Use digitalGain 1.00575
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:496 Effective exposure 123068.39us
+07-09 12:54:51.579   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:581 Lock count updated to 5
+07-09 12:54:51.580   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Analogue Gain to 524 at index 75
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:394 frame count 10 speed 0.05
+07-09 12:54:51.580   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Stats
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:181 colour temperature 2978.16K
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:183 CCM: 1.71762 -0.458405 -0.259223     -0.301626 1.57283 -0.271199     0.14707 -1.11825 1.97119
+07-09 12:54:51.580   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 3 for CFE Stats
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG RPiAf af.cpp:638 0 sst0->0 stp0->0 ft1.00->1.00 fs1.00->1.00 cont=128 phase=-63 conf=18
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:542 Applying WB R: 1.3264 B: 2.97082
+07-09 12:54:51.580   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video6[21:cap]: Queueing buffer 2
+07-09 12:54:51.580   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:702 TDN: exposure: 122364.41us last: 122364.41us ratio: 1
+07-09 12:54:51.581   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Embedded
+07-09 12:54:51.581   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 3 for CFE Embedded
+07-09 12:54:51.581   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video1[22:cap]: Queueing buffer 2
+07-09 12:54:51.581   308   322 D libcamera: DEBUG RPI pisp.cpp:2185 Input re-queue to ISP, buffer id 3, timestamp: 309444792000
+07-09 12:54:51.581   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Input
+07-09 12:54:51.581   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video20[23:out]: Queueing buffer 2
+07-09 12:54:51.582   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP TDN Input
+07-09 12:54:51.582   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video21[27:out]: Queueing buffer 0
+07-09 12:54:51.582   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP TDN Output
+07-09 12:54:51.582   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video26[28:cap]: Queueing buffer 0
+07-09 12:54:51.582   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Stitch Input
+07-09 12:54:51.582   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video22[29:out]: Queueing buffer 0
+07-09 12:54:51.582   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP Stitch Output
+07-09 12:54:51.582   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video27[30:cap]: Queueing buffer 0
+07-09 12:54:51.582   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP Config
+07-09 12:54:51.582   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video28[26:out]: Queueing buffer 0
+07-09 12:54:51.582   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.993118407
+07-09 12:54:51.583   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.992939018
+07-09 12:54:51.583   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video20[23:out]: Dequeuing buffer 2
+07-09 12:54:51.583   308   322 D libcamera: DEBUG RPI pisp.cpp:1717 Stream ISP Input buffer complete, buffer id 3, timestamp: 309460627000
+07-09 12:54:51.583   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Image
+07-09 12:54:51.584   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 3 for CFE Image
+07-09 12:54:51.584   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video4[19:cap]: Queueing buffer 2
+07-09 12:54:51.584   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video25[25:cap]: Dequeuing buffer 14
+07-09 12:54:51.584   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Output1 buffer complete, buffer id 43, timestamp: 309460627000
+07-09 12:54:51.584   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1402 Completing request buffer for stream ISP Output1
+07-09 12:54:51.584   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1457 Completing request sequence: 67
+07-09 12:54:51.584   308   322 D libcamera: DEBUG Request request.cpp:122 Request(67:C:0/1:12970367428648879872)
+07-09 12:54:51.585   308   322 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367428648879872 completed with 1 streams
+07-09 12:54:51.586   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-09 12:54:51.586   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video28[26:out]: Dequeuing buffer 0
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL camera_device.cpp:919 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Camera Process Request Start
+07-09 12:54:51.586   308   530 D libcamera: DEBUG Request request.cpp:361 Created request - cookie: 12970367428648877056
+07-09 12:54:51.586   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 1, timestamp: 309460627000
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL camera_device.cpp:943 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Queueing request 12970367428648877056 with 1 streams
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL camera_device.cpp:981 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest direct
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL camera_device.cpp:755 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer...
+07-09 12:54:51.586   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=39 numplanes=2 size=640x480 flags=1 numFds=3
+07-09 12:54:51.586   308   530 D libcamera: DEBUG HAL camera_device.cpp:771 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer fd=37offset=0length=307200
+07-09 12:54:51.587   308   530 D libcamera: DEBUG HAL camera_device.cpp:771 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': createFrameBuffer fd=38offset=307200length=153600
+07-09 12:54:51.587   308   530 D libcamera: DEBUG Buffer framebuffer.cpp:346 Buffer is contiguous
+07-09 12:54:51.587   308   530 D libcamera: DEBUG HAL camera_device.cpp:994 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': 0 - (640x480)[0x00000023] -> (640x480)[NV12] (direct)
+07-09 12:54:51.587   308   530 D libcamera: DEBUG HAL camera_device.cpp:1026 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle streams
+07-09 12:54:51.587   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video21[27:out]: Dequeuing buffer 0
+07-09 12:54:51.587   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video26[28:cap]: Dequeuing buffer 0
+07-09 12:54:51.587   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video22[29:out]: Dequeuing buffer 0
+07-09 12:54:51.587   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video27[30:cap]: Dequeuing buffer 0
+07-09 12:54:51.587   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:730 queueRequestDevice: New request sequence: 69
+07-09 12:54:51.587   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 34 for ISP Output1
+07-09 12:54:51.587   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video25[25:cap]: Queueing buffer 7
+07-09 12:54:51.587   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.988107166
+07-09 12:54:51.588   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.988012685
+07-09 12:54:51.628   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1357 Frame start 75
+07-09 12:54:51.628   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:240 frame 75 started
+07-09 12:54:51.628   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Analogue Gain to 524 at index 74
+07-09 12:54:51.628   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Exposure to 6515 at index 74
+07-09 12:54:51.628   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Vertical Blanking to 5673 at index 75
+07-09 12:54:51.628   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.947437815
+07-09 12:54:51.636   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video4[19:cap]: Dequeuing buffer 3
+07-09 12:54:51.636   308   322 D libcamera: DEBUG Timer timer.cpp:93 Starting timer 0xb400007566e8cd30: deadline 0:05:10.513156667
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Image buffer dequeue, buffer id 4, timestamp: 309504982000
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Analogue Gain to 524 at index 72
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Exposure to 6515 at index 72
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Vertical Blanking to 5673 at index 72
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Horizontal Blanking to 3680 at index 72
+07-09 12:54:51.636   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video7[20:out]: Dequeuing buffer 3
+07-09 12:54:51.636   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Config buffer dequeue, buffer id 4, timestamp: 309504982000
+07-09 12:54:51.637   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Config
+07-09 12:54:51.637   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 6 for CFE Config
+07-09 12:54:51.637   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video7[20:out]: Queueing buffer 5
+07-09 12:54:51.637   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video6[21:cap]: Dequeuing buffer 3
+07-09 12:54:51.637   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Stats buffer dequeue, buffer id 4, timestamp: 309504982000
+07-09 12:54:51.637   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.998761278
+07-09 12:54:51.637   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video1[22:cap]: Dequeuing buffer 3
+07-09 12:54:51.637   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Embedded buffer dequeue, buffer id 4, timestamp: 309504982000
+07-09 12:54:51.637   308   322 D libcamera: DEBUG RPI pisp.cpp:2286 Signalling IPA processStats and prepareIsp: Bayer buffer id: 4 Stats buffer id: 4 Embedded buffer id: 4
+07-09 12:54:51.638   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.998206407
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1283 Metadata - Exposure: 59996.89us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG IPARPI cam_helper_imx708.cpp:113 Embedded buffer size: 28800
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG IPARPI cam_helper.cpp:251 Metadata updated - Exposure: 59748.25us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1 Temperature: 25
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiLux lux.cpp:96 : estimated lux 111.94
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:370 frame_phase 6
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:293 process for channel 0
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:300 Save DeviceStatus and stats for channel 0
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:592 ev 1 fixedShutter 0.00us fixedAnalogueGain 0
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:629 exposureMode normal constraintMode normal meteringMode centre-weighted
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.15563 target 0.16056 gives gain 1.02509
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.159418 target 0.16056 gives gain 1.026
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:759 Constraint has target_Y 0.5 giving gain 0.718461
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:771 Final gain 1.026 (target_Y 0.16056 ev 1 base_ev 1)
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:807 Target totalExposure 125545.53us
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:907 After filtering, totalExposure 124176.20us no dg 123068.39us
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:813 Total exposure before channel constraints 124176.20us
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:841 Total exposure after channel constraints 124176.20us
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:856 after AWB, target dg 1 gain 1.026 target_Y 0.16056
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:873 Digital gain 1 desaturate? 0
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:875 Target totalExposureNoDG 124176.20us
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:949 Divided up shutter and gain are 60000.00us and 2.0696
+07-09 12:54:51.638   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:989 Output written, total exposure requested is 124176.20us
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:991 Camera exposure update: shutter time 60000.00us analogue gain 2.0696
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:429 frame_phase 6
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:109 Move histogram point 749.729 to 983.04
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:113 Final values 983.04 -> 983.04
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:130 Move histogram point 23668.2 to 62259.2
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:134 Final values 60259.2 -> 62259.2
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 59996.89us (Shutter lines: 6515, AGC requested 60000.00us) Gain: 2.0696 (Gain Code: 529)
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiDpc dpc.cpp:50 strength 1
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiNoise noise.cpp:77 constant 0 slope 1.32805
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiGeq geq.cpp:75 offset 452 slope 0.00462848 (analogue gain 2.048 lux 111.94)
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:119 Noise profile: constant 0 slope 1.32805
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:134 const 0 slope 2.12487 str 0.5 const2 0 slope2 4.24975
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:154 programmed tdn threshold 0.05 constant 0 slope 1.06244
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:165 programmed cdn threshold 265.609 strength 0.3
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:340 frame_count 10 speed 0.05
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:359 Using AWB gains r 1.32566 g 1 b 2.97419
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:274 prepare for channel 0
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:488 Want total exposure 123068.39us
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:494 Actual exposure 122364.41us
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:495 Use digitalGain 1.00575
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:496 Effective exposure 123068.39us
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:581 Lock count updated to 5
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:394 frame count 10 speed 0.05
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:181 colour temperature 2976.13K
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:183 CCM: 1.71817 -0.458747 -0.259435     -0.301408 1.57248 -0.271072     0.147561 -1.12007 1.97252
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG RPiAf af.cpp:638 0 sst0->0 stp0->0 ft1.00->1.00 fs1.00->1.00 cont=101 phase=-57 conf=18
+07-09 12:54:51.639   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:542 Applying WB R: 1.32566 B: 2.97419
+07-09 12:54:51.640   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:702 TDN: exposure: 122364.41us last: 122364.41us ratio: 1
+07-09 12:54:51.640   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Vertical Blanking to 5673 at index 76
+07-09 12:54:51.640   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Exposure to 6515 at index 76
+07-09 12:54:51.640   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Analogue Gain to 529 at index 76
+07-09 12:54:51.640   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Stats
+07-09 12:54:51.640   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 4 for CFE Stats
+07-09 12:54:51.640   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video6[21:cap]: Queueing buffer 3
+07-09 12:54:51.641   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Embedded
+07-09 12:54:51.641   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 4 for CFE Embedded
+07-09 12:54:51.641   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video1[22:cap]: Queueing buffer 3
+07-09 12:54:51.642   308   322 D libcamera: DEBUG RPI pisp.cpp:2185 Input re-queue to ISP, buffer id 4, timestamp: 309504982000
+07-09 12:54:51.642   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Input
+07-09 12:54:51.642   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video20[23:out]: Queueing buffer 3
+07-09 12:54:51.642   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP TDN Input
+07-09 12:54:51.642   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video21[27:out]: Queueing buffer 1
+07-09 12:54:51.642   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 2 for ISP TDN Output
+07-09 12:54:51.642   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video26[28:cap]: Queueing buffer 1
+07-09 12:54:51.643   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Stitch Input
+07-09 12:54:51.643   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video22[29:out]: Queueing buffer 0
+07-09 12:54:51.643   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP Stitch Output
+07-09 12:54:51.643   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video27[30:cap]: Queueing buffer 0
+07-09 12:54:51.643   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 2 for ISP Config
+07-09 12:54:51.643   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video28[26:out]: Queueing buffer 1
+07-09 12:54:51.643   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.992573981
+07-09 12:54:51.643   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.992438778
+07-09 12:54:51.644   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video20[23:out]: Dequeuing buffer 3
+07-09 12:54:51.644   308   322 D libcamera: DEBUG RPI pisp.cpp:1717 Stream ISP Input buffer complete, buffer id 4, timestamp: 309521608000
+07-09 12:54:51.645   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Image
+07-09 12:54:51.645   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 4 for CFE Image
+07-09 12:54:51.645   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video4[19:cap]: Queueing buffer 3
+07-09 12:54:51.645   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video25[25:cap]: Dequeuing buffer 15
+07-09 12:54:51.645   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Output1 buffer complete, buffer id 19, timestamp: 309521608000
+07-09 12:54:51.645   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1402 Completing request buffer for stream ISP Output1
+07-09 12:54:51.645   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1457 Completing request sequence: 68
+07-09 12:54:51.645   308   322 D libcamera: DEBUG Request request.cpp:122 Request(68:C:0/1:12970367428648881808)
+07-09 12:54:51.645   308   322 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367428648881808 completed with 1 streams
+07-09 12:54:51.645   308   322 D libcamera: DEBUG HAL camera_stream.cpp:188 Process...[type=Mapped]
+07-09 12:54:51.646   308   322 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=133 numplanes=2 size=640x480 flags=3 numFds=2
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video28[26:out]: Dequeuing buffer 1
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 2, timestamp: 309521608000
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video21[27:out]: Dequeuing buffer 1
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video26[28:cap]: Dequeuing buffer 1
+07-09 12:54:51.647   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video22[29:out]: Dequeuing buffer 0
+07-09 12:54:51.647   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video27[30:cap]: Dequeuing buffer 0
+07-09 12:54:51.647   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.989002037
+07-09 12:54:51.647   308  2900 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=138 length=460800 flags=1
+07-09 12:54:51.647   308  2900 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:160x90
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG JPEG post_processor_jpeg.cpp:103 Thumbnail compress returned 6769 bytes
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG EXIF exif.cpp:519 Created EXIF instance (7331 bytes)
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=138 length=460800 flags=1
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG HAL generic_camera_buffer.cpp:188 Mapping: fd=133 bufferLength=716800 flags=3
+07-09 12:54:51.648   308  2900 E libcamera: ERROR HAL generic_camera_buffer.cpp:198 Failed to mmap plane: fd=133 error=Permission denied
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:640x480
+07-09 12:54:51.666   308  2900 D libcamera: DEBUG HAL generic_camera_buffer.cpp:188 Mapping: fd=133 bufferLength=716800 flags=3
+07-09 12:54:51.666   308  2900 E libcamera: ERROR HAL generic_camera_buffer.cpp:198 Failed to mmap plane: fd=133 error=Permission denied
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1357 Frame start 76
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:240 frame 76 started
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Analogue Gain to 524 at index 75
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Exposure to 6515 at index 75
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Vertical Blanking to 5673 at index 76
+07-09 12:54:51.689   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.947224370
+07-09 12:54:51.696   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video4[19:cap]: Dequeuing buffer 0
+07-09 12:54:51.696   308   322 D libcamera: DEBUG Timer timer.cpp:93 Starting timer 0xb400007566e8cd30: deadline 0:05:10.573681334
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Image buffer dequeue, buffer id 1, timestamp: 309565173000
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Analogue Gain to 524 at index 73
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Exposure to 6515 at index 73
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Vertical Blanking to 5673 at index 73
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Horizontal Blanking to 3680 at index 73
+07-09 12:54:51.697   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video7[20:out]: Dequeuing buffer 4
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Config buffer dequeue, buffer id 5, timestamp: 309565173000
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Config
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 7 for CFE Config
+07-09 12:54:51.697   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video7[20:out]: Queueing buffer 6
+07-09 12:54:51.697   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video6[21:cap]: Dequeuing buffer 4
+07-09 12:54:51.697   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Stats buffer dequeue, buffer id 5, timestamp: 309565173000
+07-09 12:54:51.697   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video1[22:cap]: Dequeuing buffer 4
+07-09 12:54:51.698   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Embedded buffer dequeue, buffer id 5, timestamp: 309565173000
+07-09 12:54:51.698   308   322 D libcamera: DEBUG RPI pisp.cpp:2286 Signalling IPA processStats and prepareIsp: Bayer buffer id: 1 Stats buffer id: 5 Embedded buffer id: 5
+07-09 12:54:51.698   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.998530223
+07-09 12:54:51.698   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1283 Metadata - Exposure: 59996.89us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1
+07-09 12:54:51.698   308  2903 D libcamera: DEBUG IPARPI cam_helper_imx708.cpp:113 Embedded buffer size: 28800
+07-09 12:54:51.698   308  2903 D libcamera: DEBUG IPARPI cam_helper.cpp:251 Metadata updated - Exposure: 59748.25us Frame length: 6537 Line length: 9.21us Gain: 2.048 Lens: 1 Temperature: 25
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiLux lux.cpp:96 : estimated lux 111.441
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:370 frame_phase 7
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:293 process for channel 0
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:300 Save DeviceStatus and stats for channel 0
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:592 ev 1 fixedShutter 0.00us fixedAnalogueGain 0
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:629 exposureMode normal constraintMode normal meteringMode centre-weighted
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.154936 target 0.160557 gives gain 1.02964
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:750 Initial Y 0.159386 target 0.160557 gives gain 1.03073
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:759 Constraint has target_Y 0.5 giving gain 0.717397
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:771 Final gain 1.03073 (target_Y 0.160557 ev 1 base_ev 1)
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:807 Target totalExposure 126125.20us
+07-09 12:54:51.699   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:907 After filtering, totalExposure 124176.20us no dg 124176.20us
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:813 Total exposure before channel constraints 124176.20us
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:841 Total exposure after channel constraints 124176.20us
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:856 after AWB, target dg 1 gain 1.03073 target_Y 0.160557
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:873 Digital gain 1 desaturate? 0
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:875 Target totalExposureNoDG 124176.20us
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:949 Divided up shutter and gain are 60000.00us and 2.0696
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:989 Output written, total exposure requested is 124176.20us
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:991 Camera exposure update: shutter time 60000.00us analogue gain 2.0696
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:429 frame_phase 7
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:109 Move histogram point 746.055 to 983.04
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:113 Final values 983.04 -> 983.04
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:130 Move histogram point 23645.7 to 62259.2
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiContrast contrast.cpp:134 Final values 60259.2 -> 62259.2
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 59996.89us (Shutter lines: 6515, AGC requested 60000.00us) Gain: 2.0696 (Gain Code: 529)
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiDpc dpc.cpp:50 strength 1
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiNoise noise.cpp:77 constant 0 slope 1.32805
+07-09 12:54:51.700   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Vertical Blanking to 5673 at index 77
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiGeq geq.cpp:75 offset 452 slope 0.00462848 (analogue gain 2.048 lux 111.441)
+07-09 12:54:51.700   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Exposure to 6515 at index 77
+07-09 12:54:51.700   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:119 Noise profile: constant 0 slope 1.32805
+07-09 12:54:51.701   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:182 Queuing Analogue Gain to 529 at index 77
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:134 const 0 slope 2.12487 str 0.5 const2 0 slope2 4.24975
+07-09 12:54:51.701   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Stats
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:154 programmed tdn threshold 0.05 constant 0 slope 1.06244
+07-09 12:54:51.701   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 5 for CFE Stats
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiDenoise denoise.cpp:165 programmed cdn threshold 265.609 strength 0.3
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:340 frame_count 10 speed 0.05
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAwb awb.cpp:359 Using AWB gains r 1.32496 g 1 b 2.97739
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc.cpp:274 prepare for channel 0
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:488 Want total exposure 123068.39us
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:494 Actual exposure 122364.41us
+07-09 12:54:51.701   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video6[21:cap]: Queueing buffer 4
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:495 Use digitalGain 1.00575
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:496 Effective exposure 123068.39us
+07-09 12:54:51.701   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.995344389
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAgc agc_channel.cpp:581 Lock count updated to 5
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAlsc alsc.cpp:394 frame count 10 speed 0.05
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:181 colour temperature 2974.21K
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiCcm ccm.cpp:183 CCM: 1.7187 -0.459072 -0.259636     -0.301201 1.57215 -0.270952     0.148027 -1.1218 1.97378
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG RPiAf af.cpp:638 0 sst0->0 stp0->0 ft1.00->1.00 fs1.00->1.00 cont=140 phase=-59 conf=18
+07-09 12:54:51.701   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:542 Applying WB R: 1.32496 B: 2.97739
+07-09 12:54:51.702   308  2903 D libcamera: DEBUG IPARPI pisp.cpp:702 TDN: exposure: 122364.41us last: 122364.41us ratio: 1
+07-09 12:54:51.703   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Embedded
+07-09 12:54:51.703   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 5 for CFE Embedded
+07-09 12:54:51.703   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video1[22:cap]: Queueing buffer 4
+07-09 12:54:51.703   308   322 D libcamera: DEBUG RPI pisp.cpp:2185 Input re-queue to ISP, buffer id 1, timestamp: 309565173000
+07-09 12:54:51.703   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Input
+07-09 12:54:51.703   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video20[23:out]: Queueing buffer 0
+07-09 12:54:51.703   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP TDN Input
+07-09 12:54:51.703   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video21[27:out]: Queueing buffer 0
+07-09 12:54:51.704   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP TDN Output
+07-09 12:54:51.704   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video26[28:cap]: Queueing buffer 0
+07-09 12:54:51.704   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 0 for ISP Stitch Input
+07-09 12:54:51.704   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video22[29:out]: Queueing buffer 0
+07-09 12:54:51.704   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP Stitch Output
+07-09 12:54:51.704   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video27[30:cap]: Queueing buffer 0
+07-09 12:54:51.704   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for ISP Config
+07-09 12:54:51.704   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video28[26:out]: Queueing buffer 0
+07-09 12:54:51.704   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.991826260
+07-09 12:54:51.705   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.991677797
+07-09 12:54:51.708   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video20[23:out]: Dequeuing buffer 0
+07-09 12:54:51.708   308   322 D libcamera: DEBUG RPI pisp.cpp:1717 Stream ISP Input buffer complete, buffer id 1, timestamp: 309585466000
+07-09 12:54:51.708   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Image
+07-09 12:54:51.709   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 1 for CFE Image
+07-09 12:54:51.709   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video4[19:cap]: Queueing buffer 0
+07-09 12:54:51.709   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video25[25:cap]: Dequeuing buffer 7
+07-09 12:54:51.709   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Output1 buffer complete, buffer id 34, timestamp: 309585466000
+07-09 12:54:51.709   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1402 Completing request buffer for stream ISP Output1
+07-09 12:54:51.709   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1457 Completing request sequence: 69
+07-09 12:54:51.709   308   322 D libcamera: DEBUG Request request.cpp:122 Request(69:C:0/1:12970367428648877056)
+07-09 12:54:51.710   308   322 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367428648877056 completed with 1 streams
+07-09 12:54:51.710   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-09 12:54:51.710   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video28[26:out]: Dequeuing buffer 0
+07-09 12:54:51.710   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 1, timestamp: 309585466000
+07-09 12:54:51.710   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-09 12:54:51.710   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video21[27:out]: Dequeuing buffer 0
+07-09 12:54:51.710   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video26[28:cap]: Dequeuing buffer 0
+07-09 12:54:51.710   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video22[29:out]: Dequeuing buffer 0
+07-09 12:54:51.710   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video27[30:cap]: Dequeuing buffer 0
+07-09 12:54:51.710   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.985869741
+07-09 12:54:51.748   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1357 Frame start 77
+07-09 12:54:51.748   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:240 frame 77 started
+07-09 12:54:51.748   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Analogue Gain to 529 at index 76
+07-09 12:54:51.748   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Exposure to 6515 at index 76
+07-09 12:54:51.748   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:270 Setting Vertical Blanking to 5673 at index 77
+07-09 12:54:51.749   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.947316945
+07-09 12:54:51.759   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video4[19:cap]: Dequeuing buffer 1
+07-09 12:54:51.759   308   322 D libcamera: DEBUG Timer timer.cpp:93 Starting timer 0xb400007566e8cd30: deadline 0:05:10.636880852
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Image buffer dequeue, buffer id 2, timestamp: 309625364000
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Analogue Gain to 524 at index 74
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Exposure to 6515 at index 74
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Vertical Blanking to 5673 at index 74
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:220 Reading Horizontal Blanking to 3680 at index 74
+07-09 12:54:51.760   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video7[20:out]: Dequeuing buffer 5
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Config buffer dequeue, buffer id 6, timestamp: 309625364000
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream CFE Config
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPISTREAM rpi_stream.cpp:271 Queuing buffer 8 for CFE Config
+07-09 12:54:51.760   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1693 /dev/video7[20:out]: Queueing buffer 7
+07-09 12:54:51.760   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video6[21:cap]: Dequeuing buffer 5
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Stats buffer dequeue, buffer id 6, timestamp: 309625364000
+07-09 12:54:51.760   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.999198611
+07-09 12:54:51.760   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video1[22:cap]: Dequeuing buffer 5
+07-09 12:54:51.760   308   322 D libcamera: DEBUG RPI pisp.cpp:1669 Stream CFE Embedded buffer dequeue, buffer id 6, timestamp: 309625364000
+07-09 12:54:51.760   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.999018426
+07-09 12:54:51.776  2912  2912 F DEBUG   : Cmdline: /vendor/bin/hw/android.hardware.camera.provider@2.5-service_64
+07-09 12:54:51.776  2912  2912 F DEBUG   : pid: 308, tid: 2900, name: provider@2.5-se  >>> /vendor/bin/hw/android.hardware.camera.provider@2.5-service_64 <<<
+07-09 12:54:51.776  2912  2912 F DEBUG   :       #00 pc 000000000003be78  /vendor/lib64/hw/camera.libcamera.so (PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer*)+1496)
+07-09 12:54:51.776  2912  2912 F DEBUG   :       #01 pc 0000000000035c60  /vendor/lib64/hw/camera.libcamera.so (CameraStream::PostProcessorWorker::run()+256)
+07-09 12:54:51.776  2912  2912 F DEBUG   :       #02 pc 000000000001a6fc  /vendor/lib64/libcamera-base.so (void* std::__1::__thread_proxy<std::__1::tuple<std::__1::unique_ptr<std::__1::__thread_struct, std::__1::default_delete<std::__1::__thread_struct> >, void (libcamera::Thread::*)(), libcamera::Thread*> >(void*)+60)
+07-09 12:54:51.806   587  1230 I cameraserver: Camera provider 'legacy/0-0' has died; removing it
+07-09 12:54:51.807   587  1230 I CameraService: onDeviceStatusChanged: Status changed for cameraId=0, newStatus=0
+07-09 12:54:51.823   587  1230 W CameraService: removeClientLocked: Could not evict client, no client for camera ID offline-0
+07-09 12:54:51.823   587  1230 I CameraService: disconnectClient: Client for camera ID 0 evicted due to device status change from HAL
+07-09 12:54:52.175     0     0 I init    : Service 'vendor.camera-provider-2-5' (pid 308) received signal 11
+07-09 12:54:52.183     0     0 I init    : Sending signal 9 to service 'vendor.camera-provider-2-5' (pid 308) process group...
+07-09 12:54:52.214     0     0 I init    : starting service 'vendor.camera-provider-2-5'...
+07-09 12:54:52.252     0     0 I init    : ... started service 'vendor.camera-provider-2-5' has pid 2920
+07-09 12:54:51.922  2920  2920 I android.hardware.camera.provider@2.5-service: CameraProvider@2.5 legacy service is starting.
+07-09 12:54:51.927  2920  2920 D libcamera: DEBUG HAL camera3_hal.cpp:61 Initialising Android camera HAL
+07-09 12:54:51.927  2920  2920 D libcamera: DEBUG HALConfig camera_hal_config.cpp:189 '/base/axi/pcie@120000/rp1/i2c@88000/imx219@10' (0)[0]
+07-09 12:54:51.927  2920  2920 D libcamera: DEBUG HALConfig camera_hal_config.cpp:189 '/base/axi/pcie@120000/rp1/i2c@88000/imx296@1a' (0)[0]
+07-09 12:54:51.928  2920  2920 D libcamera: DEBUG HALConfig camera_hal_config.cpp:189 '/base/axi/pcie@120000/rp1/i2c@88000/imx477@1a' (0)[0]
+07-09 12:54:51.928  2920  2920 D libcamera: DEBUG HALConfig camera_hal_config.cpp:189 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a' (0)[180]
+07-09 12:54:51.928  2920  2920 D libcamera: DEBUG HALConfig camera_hal_config.cpp:189 '/base/axi/pcie@120000/rp1/i2c@88000/ov5647@36' (0)[0]
+07-09 12:54:51.928  2920  2920 D libcamera: DEBUG IPAModule ipa_module.cpp:325 ipa_rpi_pisp.so: IPA module /vendor/lib64/libcamera//ipa_rpi_pisp.so is not signed
+07-09 12:54:51.928  2920  2920 D libcamera: DEBUG IPAManager ipa_manager.cpp:246 Loaded IPA module '/vendor/lib64/libcamera//ipa_rpi_pisp.so'
+07-09 12:54:51.928  2920  2920 I libcamera:  INFO Camera camera_manager.cpp:313 libcamera v0.3.0
+07-09 12:54:51.928  2920  2921 D libcamera: DEBUG Camera camera_manager.cpp:69 Starting camera manager
+07-09 12:54:51.944  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media1[]: Media opened: /dev/media1 fd=10
+07-09 12:54:51.944  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:230 New media device "pispbe" created from /dev/media1
+07-09 12:54:51.944  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:96 Defer media device /dev/media1 due to 7 missing dependencies
+07-09 12:54:51.945  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media3[]: Media opened: /dev/media3 fd=10
+07-09 12:54:51.945  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:230 New media device "rp1-cfe" created from /dev/media3
+07-09 12:54:51.945  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:96 Defer media device /dev/media3 due to 8 missing dependencies
+07-09 12:54:51.946  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media0[]: Media opened: /dev/media0 fd=10
+07-09 12:54:51.946  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:230 New media device "pispbe" created from /dev/media0
+07-09 12:54:51.946  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:96 Defer media device /dev/media0 due to 2 missing dependencies
+07-09 12:54:51.946  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media2[]: Media opened: /dev/media2 fd=10
+07-09 12:54:51.946  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:230 New media device "rpivid" created from /dev/media2
+07-09 12:54:51.947  2920  2921 E libcamera: ERROR MediaDevice media_object.cpp:370 Device node /dev/video19 can't be accessed: Permission denied
+07-09 12:54:51.947  2920  2921 W libcamera:  WARN DeviceEnumerator device_enumerator_udev.cpp:88 Failed to populate media device /dev/media2 (rpivid), skipping
+07-09 12:54:51.947  2920  2921 W libcamera:  WARN DeviceEnumerator device_enumerator_udev.cpp:174 Failed to add device for '/sys/devices/platform/axi/1000800000.codec/media2', skipping
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:322 All dependencies for media device /dev/media0 found
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:258 Added device /dev/media0: pispbe
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:322 All dependencies for media device /dev/media1 found
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:258 Added device /dev/media1: pispbe
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator_udev.cpp:322 All dependencies for media device /dev/media3 found
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:258 Added device /dev/media3: rp1-cfe
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG Camera camera_manager.cpp:134 Found registered pipeline handler 'rpi/pisp'
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:318 Successful match for media device "rp1-cfe"
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media3[rp1-cfe]: Media opened: /dev/media3 fd=11
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG DeviceEnumerator device_enumerator.cpp:318 Successful match for media device "pispbe"
+07-09 12:54:51.947  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:490 /dev/media0[pispbe]: Media opened: /dev/media0 fd=12
+07-09 12:54:51.947  2920  2921 I libcamera:  INFO RPI pisp.cpp:695 libpisp version 1.0.6
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 'imx708': Opened device: /dev/v4l-subdev2 fd=15
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Exposure (0x00980911)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Horizontal Flip (0x00980914)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Vertical Flip (0x00980915)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Wide Dynamic Range (0x009a0915)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Camera Orientation (0x009a0922)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Camera Sensor Rotation (0x009a0923)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Vertical Blanking (0x009e0901)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Horizontal Blanking (0x009e0902)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Analogue Gain (0x009e0903)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Red Pixel Value (0x009e0904)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Green (Red) Pixel Value (0x009e0905)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Blue Pixel Value (0x009e0906)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Green (Blue) Pixel Value (0x009e0907)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Notify Gains (0x009e0909)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Link Frequency (0x009f0901)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Pixel Rate (0x009f0902)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Test Pattern (0x009f0903)
+07-09 12:54:51.948  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'imx708': Control: Digital Gain (0x009f0905)
+07-09 12:54:51.939  2920  2920 I android.hardwar: type=1400 audit(0.0:500): avc:  denied  { read write } for  name="media1" dev="tmpfs" ino=678 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+07-09 12:54:51.939  2920  2920 I android.hardwar: type=1400 audit(0.0:501): avc:  denied  { open } for  path="/dev/media1" dev="tmpfs" ino=678 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+07-09 12:54:51.939  2920  2920 I android.hardwar: type=1400 audit(0.0:502): avc:  denied  { getattr } for  path="/dev/v4l-subdev2" dev="tmpfs" ino=750 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+07-09 12:54:52.028  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 'dw9807 6-000c': Opened device: /dev/v4l-subdev3 fd=16
+07-09 12:54:52.028  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:639 'dw9807 6-000c': Control: Focus, Absolute (0x009a090a)
+07-09 12:54:52.028  2920  2921 D libcamera: DEBUG CameraSensor camera_sensor.cpp:1187 'imx708': Apply test pattern mode 0
+07-09 12:54:52.035  2920  2921 D libcamera: DEBUG IPAManager ipa_manager.cpp:317 IPA module /vendor/lib64/libcamera//ipa_rpi_pisp.so signature is not valid
+07-09 12:54:52.035  2920  2921 D libcamera: DEBUG IPAProxy raspberrypi_ipa_proxy.cpp:45 initializing raspberrypi proxy: loading IPA from /vendor/lib64/libcamera//ipa_rpi_pisp.so
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiBlackLevel black_level.cpp:41  Read black levels red 4096 green 4096 blue 4096
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc.cpp:49 Read AGC channel
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc_channel.cpp:219 AgcConfig
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc.cpp:49 Read AGC channel
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc_channel.cpp:219 AgcConfig
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc.cpp:49 Read AGC channel
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc_channel.cpp:219 AgcConfig
+07-09 12:54:52.046  2920  2921 D libcamera: DEBUG RPiAgc agc.cpp:49 Read AGC channel
+07-09 12:54:52.047  2920  2921 D libcamera: DEBUG RPiAgc agc_channel.cpp:219 AgcConfig
+07-09 12:54:52.047  2920  2921 D libcamera: DEBUG RPiAgc agc.cpp:56 Read 4 channel(s)
+07-09 12:54:52.048  2920  2921 D libcamera: DEBUG RPiAlsc alsc.cpp:139 Read calibrations_Cr calibration for ct 3000
+07-09 12:54:52.048  2920  2921 D libcamera: DEBUG RPiAlsc alsc.cpp:139 Read calibrations_Cr calibration for ct 5000
+07-09 12:54:52.048  2920  2921 D libcamera: DEBUG RPiAlsc alsc.cpp:139 Read calibrations_Cb calibration for ct 3000
+07-09 12:54:52.048  2920  2921 D libcamera: DEBUG RPiAlsc alsc.cpp:139 Read calibrations_Cb calibration for ct 5000
+07-09 12:54:52.048  2920  2921 D libcamera: DEBUG RPiSharpen sharpen.cpp:45 Read threshold 0.25 strength 1 limit 1
+07-09 12:54:52.049  2920  2921 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:103 Set a delay of 3 and priority write flag 0 for Horizontal Blanking
+07-09 12:54:52.049  2920  2921 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:103 Set a delay of 3 and priority write flag 1 for Vertical Blanking
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:103 Set a delay of 2 and priority write flag 0 for Exposure
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG RPiDelayedControls delayed_controls.cpp:103 Set a delay of 2 and priority write flag 0 for Analogue Gain
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 'csi2': Opened device: /dev/v4l-subdev0 fd=17
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 'pisp-fe': Opened device: /dev/v4l-subdev1 fd=18
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video4[-1:cap]: Opened device: /dev/video4 fd=19
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video4[19:cap]: Opened device platform:1f00110000.csi: rp1-cfe: rp1-cfe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video7[-1:cap]: Opened device: /dev/video7 fd=20
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video7[20:out]: Opened device platform:1f00110000.csi: rp1-cfe: rp1-cfe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video6[-1:cap]: Opened device: /dev/video6 fd=21
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video6[21:cap]: Opened device platform:1f00110000.csi: rp1-cfe: rp1-cfe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video1[-1:cap]: Opened device: /dev/video1 fd=22
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video1[22:cap]: Opened device platform:1f00110000.csi: rp1-cfe: rp1-cfe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video20[-1:cap]: Opened device: /dev/video20 fd=23
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video20[23:out]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video24[-1:cap]: Opened device: /dev/video24 fd=24
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video24[24:cap]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video25[-1:cap]: Opened device: /dev/video25 fd=25
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video25[25:cap]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video28[-1:cap]: Opened device: /dev/video28 fd=26
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video28[26:out]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video21[-1:cap]: Opened device: /dev/video21 fd=27
+07-09 12:54:52.050  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video21[27:out]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video26[-1:cap]: Opened device: /dev/video26 fd=28
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video26[28:cap]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video22[-1:cap]: Opened device: /dev/video22 fd=29
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video22[29:out]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_device.cpp:99 /dev/video27[-1:cap]: Opened device: /dev/video27 fd=30
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:632 /dev/video27[30:cap]: Opened device platform:1000880000.pisp_be: pispbe: pispbe
+07-09 12:54:52.051  2920  2921 W libcamera:  WARN V4L2 v4l2_pixelformat.cpp:344 Unsupported V4L2 pixel format RPBP
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG Camera camera.cpp:1118 streams configuration: (0) 4608x2592-YUV420
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:503 Maximum supported resolution: 4608x2592
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format RAW16
+07-09 12:54:52.051  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SBGGR16
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 12600 (best 12600)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 10200 (best 10200)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 3000 (best 3000)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:619 Mapped Android format RAW16 to SBGGR16
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG Camera camera.cpp:1118 streams configuration: (0) 4608x2592-SRGGB10_CSI2P
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format BLOB
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:568 Mapped Android format BLOB to MJPEG (fixed mapping)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format IMPLEMENTATION_DEFINED
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing NV12
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:619 Mapped Android format IMPLEMENTATION_DEFINED to NV12
+07-09 12:54:52.052  2920  2921 W libcamera:  WARN V4L2 v4l2_pixelformat.cpp:344 Unsupported V4L2 pixel format RPBP
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG Camera camera.cpp:1118 streams configuration: (0) 800x600-XRGB8888
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1626.67 (best 1626.67)
+07-09 12:54:52.052  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1926.67 (best 1626.67)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2826.67 (best 1626.67)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 320x240-NV12 swDownscale is 1
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 320x240-NV12 supported
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1375 (best 1375)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1675 (best 1375)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2575 (best 1375)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 576x324-NV12 swDownscale is 1
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 576x324-NV12 supported
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1486.67 (best 1486.67)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1786.67 (best 1486.67)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2686.67 (best 1486.67)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 640x480-NV12 swDownscale is 1
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 640x480-NV12 supported
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1450 (best 1150)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2350 (best 1150)
+07-09 12:54:52.053  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1152x648-NV12 swDownscale is 1
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1152x648-NV12 supported
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1100 (best 1100)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1400 (best 1100)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2300 (best 1100)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x720-NV12 swDownscale is 1
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1280x720-NV12 supported
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1422.67 (best 1422.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1506.67 (best 1422.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2406.67 (best 1422.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x960-NV12 swDownscale is 1
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1280x960-NV12 supported
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1966.67 (best 1966.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1366.67 (best 1366.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2266.67 (best 1366.67)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 28 height 22
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1600x1200-NV12 swDownscale is 1
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1600x1200-NV12 supported
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 2200 (best 2200)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2050 (best 1150)
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1920x1080-NV12 swDownscale is 1
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.054  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1920x1080-NV12 supported
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 3400 (best 3400)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1900 (best 1000)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 2304x1296-NV12 swDownscale is 1
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 2304x1296-NV12 supported
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 4608x2592-NV12 supported
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1626.67 (best 1626.67)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1926.67 (best 1626.67)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2826.67 (best 1626.67)
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 320x240-NV12 swDownscale is 1
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.055  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 320x240-NV12
+07-09 12:54:52.055  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.055  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 320x240-NV12 (sw downscale 1)
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1375 (best 1375)
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1675 (best 1375)
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2575 (best 1375)
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 576x324-NV12 swDownscale is 1
+07-09 12:54:52.056  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.056  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 576x324-NV12
+07-09 12:54:52.057  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 576x324-NV12 (sw downscale 1)
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1486.67 (best 1486.67)
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1786.67 (best 1486.67)
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2686.67 (best 1486.67)
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 640x480-NV12 swDownscale is 1
+07-09 12:54:52.057  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.057  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 640x480-NV12
+07-09 12:54:52.057  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 640x480-NV12 (sw downscale 1)
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.058  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1450 (best 1150)
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2350 (best 1150)
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1152x648-NV12 swDownscale is 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.059  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1152x648-NV12
+07-09 12:54:52.059  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1152x648-NV12 (sw downscale 1)
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.059  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1100 (best 1100)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1400 (best 1100)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2300 (best 1100)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x720-NV12 swDownscale is 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.060  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1280x720-NV12
+07-09 12:54:52.060  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1280x720-NV12 (sw downscale 1)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.060  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1422.67 (best 1422.67)
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1506.67 (best 1422.67)
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2406.67 (best 1422.67)
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x960-NV12 swDownscale is 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.061  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1280x960-NV12
+07-09 12:54:52.061  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1280x960-NV12 (sw downscale 1)
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.061  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1966.67 (best 1966.67)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1366.67 (best 1366.67)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2266.67 (best 1366.67)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 28 height 22
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1600x1200-NV12 swDownscale is 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.062  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1600x1200-NV12
+07-09 12:54:52.062  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1600x1200-NV12 (sw downscale 1)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.062  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 2200 (best 2200)
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2050 (best 1150)
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1920x1080-NV12 swDownscale is 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.063  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1920x1080-NV12
+07-09 12:54:52.063  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1920x1080-NV12 (sw downscale 1)
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.063  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 3400 (best 3400)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1900 (best 1000)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 2304x1296-NV12 swDownscale is 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.064  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 2304x1296-NV12
+07-09 12:54:52.064  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 2304x1296-NV12 (sw downscale 1)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.064  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.065  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 4608x2592-NV12
+07-09 12:54:52.065  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 4608x2592-SBGGR10_1X10 - Selected CFE format: 4608x2592-PC1B
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 4608x2592-NV12 (sw downscale 1)
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19980.65us (Shutter lines: 760, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format YCbCr_420_888
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing NV12
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.065  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:619 Mapped Android format YCbCr_420_888 to NV12
+07-09 12:54:52.066  2920  2921 W libcamera:  WARN V4L2 v4l2_pixelformat.cpp:344 Unsupported V4L2 pixel format RPBP
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG Camera camera.cpp:1118 streams configuration: (0) 800x600-XRGB8888
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1626.67 (best 1626.67)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1926.67 (best 1626.67)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2826.67 (best 1626.67)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 320x240-NV12 swDownscale is 1
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 320x240-NV12 supported
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1375 (best 1375)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1675 (best 1375)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2575 (best 1375)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 576x324-NV12 swDownscale is 1
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 576x324-NV12 supported
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1486.67 (best 1486.67)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1786.67 (best 1486.67)
+07-09 12:54:52.066  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2686.67 (best 1486.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 640x480-NV12 swDownscale is 1
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 640x480-NV12 supported
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1450 (best 1150)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2350 (best 1150)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1152x648-NV12 swDownscale is 1
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1152x648-NV12 supported
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1100 (best 1100)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1400 (best 1100)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2300 (best 1100)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x720-NV12 swDownscale is 1
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1280x720-NV12 supported
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1422.67 (best 1422.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1506.67 (best 1422.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2406.67 (best 1422.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x960-NV12 swDownscale is 1
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1280x960-NV12 supported
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1966.67 (best 1966.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1366.67 (best 1366.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2266.67 (best 1366.67)
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 28 height 22
+07-09 12:54:52.067  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1600x1200-NV12 swDownscale is 1
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1600x1200-NV12 supported
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 2200 (best 2200)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2050 (best 1150)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1920x1080-NV12 swDownscale is 1
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 1920x1080-NV12 supported
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 3400 (best 3400)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1900 (best 1000)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 2304x1296-NV12 swDownscale is 1
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 2304x1296-NV12 supported
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.068  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:452 4608x2592-NV12 supported
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1626.67 (best 1626.67)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1926.67 (best 1626.67)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2826.67 (best 1626.67)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 320x240-NV12 swDownscale is 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.069  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 320x240-NV12
+07-09 12:54:52.069  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 320x240-NV12 (sw downscale 1)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1375 (best 1375)
+07-09 12:54:52.069  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1675 (best 1375)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2575 (best 1375)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 576x324-NV12 swDownscale is 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.070  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 576x324-NV12
+07-09 12:54:52.070  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 576x324-NV12 (sw downscale 1)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1486.67 (best 1486.67)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1786.67 (best 1486.67)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2686.67 (best 1486.67)
+07-09 12:54:52.070  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 640x480-NV12 swDownscale is 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.071  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 640x480-NV12
+07-09 12:54:52.071  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 640x480-NV12 (sw downscale 1)
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1450 (best 1150)
+07-09 12:54:52.071  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2350 (best 1150)
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1152x648-NV12 swDownscale is 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.072  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1152x648-NV12
+07-09 12:54:52.072  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1152x648-NV12 (sw downscale 1)
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.072  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1100 (best 1100)
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1400 (best 1100)
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2300 (best 1100)
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 24 height 14
+07-09 12:54:52.047  2920  2920 I android.hardwar: type=1400 audit(0.0:503): avc:  denied  { lock } for  path="/dev/media3" dev="tmpfs" ino=692 scontext=u:r:hal_camera_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x720-NV12 swDownscale is 1
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.073  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1280x720-NV12
+07-09 12:54:52.073  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1280x720-NV12 (sw downscale 1)
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.073  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1422.67 (best 1422.67)
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1506.67 (best 1422.67)
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2406.67 (best 1422.67)
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1280x960-NV12 swDownscale is 1
+07-09 12:54:52.074  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.074  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1280x960-NV12
+07-09 12:54:52.074  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1280x960-NV12 (sw downscale 1)
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.075  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1966.67 (best 1966.67)
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1366.67 (best 1366.67)
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2266.67 (best 1366.67)
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 28 height 22
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1600x1200-NV12 swDownscale is 1
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.076  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1600x1200-NV12
+07-09 12:54:52.076  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1600x1200-NV12 (sw downscale 1)
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.076  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.077  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 2200 (best 2200)
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1150 (best 1150)
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2050 (best 1150)
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 1920x1080-NV12 swDownscale is 1
+07-09 12:54:52.078  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.078  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 1920x1080-NV12
+07-09 12:54:52.078  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 1920x1080-NV12 (sw downscale 1)
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.079  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 3400 (best 3400)
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1900 (best 1000)
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 36 height 22
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 2304x1296-NV12 swDownscale is 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.080  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 2304x1296-NV12
+07-09 12:54:52.080  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 2304x1296-SBGGR10_1X10 - Selected CFE format: 2304x1296-PC1B
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 2304x1296-NV12 (sw downscale 1)
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.080  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19987.54us (Shutter lines: 1496, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 72 height 42
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 4608x2592-NV12 swDownscale is 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.081  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 4608x2592-NV12
+07-09 12:54:52.081  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 4608x2592-SBGGR10_1X10 - Selected CFE format: 4608x2592-PC1B
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 4608x2592-NV12 (sw downscale 1)
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 9216
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sYCC
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.081  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19980.65us (Shutter lines: 760, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format RAW10
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SBGGR10_CSI2P
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 9600 (best 9600)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 7200 (best 7200)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 0 (best 0)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SGBRG10_CSI2P
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 9600 (best 9600)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 7200 (best 7200)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 0 (best 0)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SGRBG10_CSI2P
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 9600 (best 9600)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 7200 (best 7200)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 0 (best 0)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SRGGB10_CSI2P
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 9600 (best 9600)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 7200 (best 7200)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 0 (best 0)
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:559 Trying to map Android format RAW12
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SBGGR12_CSI2P
+07-09 12:54:52.082  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SGBRG12_CSI2P
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SGRBG12_CSI2P
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:582 Testing SRGGB12_CSI2P
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 10600 (best 10600)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 8200 (best 8200)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 1000 (best 1000)
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:751 Collected stream configuration map: 
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 320x240 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 576x324 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 640x480 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1152x648 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x720 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x960 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1600x1200 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1920x1080 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 2304x1296 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 4608x2592 - 0x00000022 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 320x240 - 0x00000023 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 320x240 - 0x00000021 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 576x324 - 0x00000023 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 576x324 - 0x00000021 }
+07-09 12:54:52.083  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 640x480 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 640x480 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1152x648 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1152x648 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x720 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x720 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x960 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1280x960 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1600x1200 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1600x1200 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1920x1080 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 1920x1080 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 2304x1296 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 2304x1296 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 4608x2592 - 0x00000023 }
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:753 { 4608x2592 - 0x00000021 }
+07-09 12:54:52.084  2920  2921 W libcamera:  WARN V4L2 v4l2_pixelformat.cpp:344 Unsupported V4L2 pixel format RPBP
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG Camera camera.cpp:1118 streams configuration: (0) 800x600-XRGB8888
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 1536x864 fmt SRGGB10 Score: 1416.67 (best 1416.67)
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 2304x1296 fmt SRGGB10 Score: 1716.67 (best 1416.67)
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:958 Format: 4608x2592 fmt SRGGB10 Score: 2616.67 (best 1416.67)
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1251 minSize: width 18 height 14
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1386 Swapping 32-bit for 24-bit format
+07-09 12:54:52.084  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1295 For stream 800x600-BGR3 swDownscale is 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:284 Try color space sYCC
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pipeline_base.cpp:340 Color space changed from sRGB to sRGB
+07-09 12:54:52.085  2920  2921 I libcamera:  INFO Camera camera.cpp:1183 configuring streams: (0) 800x600-XRGB8888
+07-09 12:54:52.085  2920  2921 I libcamera:  INFO RPI pisp.cpp:1450 Sensor: /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a - Selected sensor format: 1536x864-SBGGR10_1X10 - Selected CFE format: 1536x864-PC1B
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1386 Swapping 32-bit for 24-bit format
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1504 Setting ISP Output1 to 800x600-BGR3 (sw downscale 1)
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1510 After setFormat, stride 3200
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1520 Stream ISP Output1 has color space sRGB
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG RPI pisp.cpp:1575 Setting embedded data format 0x0-SENS
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> rp1-cfe-csi2_ch0[0]: 0
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[4] -> pisp-fe[0]: 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: csi2[5] -> rp1-cfe-embedded[0]: 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: rp1-cfe-fe_config[0] -> pisp-fe[1]: 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[2] -> rp1-cfe-fe_image0[0]: 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[3] -> rp1-cfe-fe_image1[0]: 0
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG MediaDevice media_device.cpp:833 /dev/media3[rp1-cfe]: pisp-fe[4] -> rp1-cfe-fe_stats[0]: 1
+07-09 12:54:52.085  2920  2921 D libcamera: DEBUG IPARPI ipa_base.cpp:1482 Applying AGC Exposure: 19992.82us (Shutter lines: 2171, AGC requested 20000.00us) Gain: 1 (Gain Code: 112)
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG RPiAf af.cpp:723 setLensPosition: 1
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (320x240)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (576x324)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (640x480)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (1152x648)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (1280x720)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (1280x960)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (1600x1200)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (1920x1080)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (2304x1296)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000022 (4608x2592)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (320x240)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (320x240)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (576x324)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (576x324)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (640x480)[33333333]@30
+07-09 12:54:52.086  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (640x480)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (1152x648)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (1152x648)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (1280x720)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (1280x720)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (1280x960)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (1280x960)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (1600x1200)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (1600x1200)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (1920x1080)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (1920x1080)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (2304x1296)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (2304x1296)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000023 (4608x2592)[33333333]@30
+07-09 12:54:52.087  2920  2921 D libcamera: DEBUG HAL camera_capabilities.cpp:1340 Output Stream: 0x00000021 (4608x2592)[33333333]@30
+07-09 12:54:52.087  2920  2921 I libcamera:  INFO CameraMetadata camera_metadata.cpp:109 Resized: old entry capacity 64, old data capacity 1024, new entry capacity 64, new data capacity 2048
+07-09 12:54:52.087  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:231 Manual sensor capability unavailable: missing AE mode off
+07-09 12:54:52.087  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:271 Manual post processing capability unavailable: missing AWB mode off
+07-09 12:54:52.087  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:316 Burst capture capability unavailable: missing AE lock
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:378 Hardware level FULL unavailable: missing manual sensor
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:383 Hardware level FULL unavailable: missing manual post processing
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:388 Hardware level FULL unavailable: missing burst capture
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:394 Hardware level FULL unavailable: missing or invalid max sync latency
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:1416 Hardware level: LIMITED
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO CameraMetadata camera_metadata.cpp:109 Resized: old entry capacity 64, old data capacity 2048, new entry capacity 64, new data capacity 4096
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO HAL camera_capabilities.cpp:1439 Static metadata resized: 54 entries and 2408 bytes used
+07-09 12:54:52.088  2920  2921 D libcamera: DEBUG HAL camera_hal_manager.cpp:197 Camera ID: 0 added successfully.
+07-09 12:54:52.088  2920  2921 I libcamera:  INFO RPI pisp.cpp:1154 Registered camera /base/axi/pcie@120000/rp1/i2c@88000/imx708@1a to CFE device /dev/media3 and ISP device /dev/media0 using PiSP variant BCM2712_C0
+07-09 12:54:52.088  2920  2921 D libcamera: DEBUG Camera camera_manager.cpp:155 Pipeline handler "rpi/pisp" matched
+07-09 12:54:52.088  2920  2921 D libcamera: DEBUG RPI pisp.cpp:865 Unable to acquire a CFE instance
+07-09 12:54:52.088  2920  2920 I CamPrvdr@2.4-legacy: Loaded "libcamera camera HALv3 module" camera module
+07-09 12:54:52.096  2920  2920 I HidlServiceManagement: Registered android.hardware.camera.provider@2.5::ICameraProvider/legacy/0
+07-09 12:54:52.096  2920  2920 I HidlServiceManagement: Removing namespace from process name android.hardware.camera.provider@2.5-service_64 to provider@2.5-service_64.
+07-09 12:54:53.426   952  1035 V WindowManagerShell: Transition requested (#25): android.os.BinderProxy@544b9e9 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.evtrack.frontdesk/.LoaderActivity } baseActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.UserOnboardActivity} topActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.WelcomeActivity} origActivity=null realActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.LoaderActivity} numActivities=2 lastActiveTime=311300 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@21e566e} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{c54810f com.evtrack.frontdesk.WelcomeActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1920 topActivityLetterboxHeight=1080 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatControlState=hidden}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 25 }
+07-09 12:54:53.740   736   757 V WindowManager: Sent Transition (#25) createdAt=07-09 12:54:53.421 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=10 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.evtrack.frontdesk/.LoaderActivity } baseActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.UserOnboardActivity} topActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.WelcomeActivity} origActivity=null realActivity=ComponentInfo{com.evtrack.frontdesk/com.evtrack.frontdesk.LoaderActivity} numActivities=2 lastActiveTime=311300 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1e83232 Task{82feb1a #10 type=standard A=10099:com.evtrack.frontdesk}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{de8c25f com.evtrack.frontdesk.WelcomeActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=1920 topActivityLetterboxHeight=1080 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatControlState=hidden}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 25 }
+07-09 12:54:54.378  2748  2748 D DeferrableSurface: surface closed,  useCount=1 closed=true androidx.camera.core.impl.ImmediateSurface@1964dcd
+07-09 12:54:54.380  2748  2748 D DeferrableSurface: surface closed,  useCount=1 closed=true androidx.camera.core.impl.ImmediateSurface@484b5d0
+07-09 12:54:56.946   587  1230 D CameraTraces: Process trace saved. Use dumpsys media.camera to view.
+07-09 12:54:56.950   587  1230 I CameraService: disconnect: Disconnected client for camera 0 for PID 2748
+07-09 12:54:56.950   587  1230 D cameraserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+07-09 12:54:56.953   587   613 I cameraserver: Connecting to new camera provider: legacy/0, isRemote? 1
+07-09 12:54:56.954   587   613 I CameraProviderManager: Enumerating new camera device: device@3.3/legacy/0
+07-09 12:54:56.955   587   613 E cameraserver: HidlDeviceInfo3: Converted ICameraDevice instance to nullptr
+07-09 12:54:56.955   587   613 I CameraProviderManager: Camera provider legacy/0 ready with 1 camera devices
+07-09 12:54:56.955   587   613 I CameraService: onDeviceStatusChanged: Status changed for cameraId=0, newStatus=1
+07-09 12:54:56.955   587   613 I CameraService: onDeviceStatusChanged: Unknown camera ID 0, a new camera is added
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: android.hardware.camera2.CameraAccessException: CAMERA_ERROR (3): cancelRequest:630: Camera 0: Error clearing streaming request: Function not implemented (-38)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.utils.ExceptionUtils.throwAsPublicException(ExceptionUtils.java:75)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.ICameraDeviceUserWrapper.cancelRequest(ICameraDeviceUserWrapper.java:93)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraDeviceImpl.stopRepeating(CameraDeviceImpl.java:1379)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl.close(CameraCaptureSessionImpl.java:579)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraCaptureSessionImpl$2.onDisconnected(CameraCaptureSessionImpl.java:805)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.CameraDeviceImpl$7.run(CameraDeviceImpl.java:287)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at androidx.camera.core.impl.utils.executor.SequentialExecutor$1.run(SequentialExecutor.java:111)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at androidx.camera.core.impl.utils.executor.SequentialExecutor$QueueWorker.workOnQueue(SequentialExecutor.java:231)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at androidx.camera.core.impl.utils.executor.SequentialExecutor$QueueWorker.run(SequentialExecutor.java:173)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.ICameraDeviceUser$Stub$Proxy.cancelRequest(ICameraDeviceUser.java:646)
+07-09 12:54:56.958  2748  2881 E CameraCaptureSession: 	at android.hardware.camera2.impl.ICameraDeviceUserWrapper.cancelRequest(ICameraDeviceUserWrapper.java:91)
+07-09 12:54:56.959  2748  2881 D DeferrableSurface: use count-1,  useCount=0 closed=true androidx.camera.core.impl.ImmediateSurface@1964dcd
+07-09 12:54:56.960  2748  2881 D DeferrableSurface: Surface no longer in use[total_surfaces=2, used_surfaces=1](androidx.camera.core.impl.ImmediateSurface@1964dcd}
+07-09 12:54:56.960  2748  2881 D DeferrableSurface: Surface terminated[total_surfaces=1, used_surfaces=1](androidx.camera.core.impl.ImmediateSurface@1964dcd}
+07-09 12:54:56.961  2748  2881 D DeferrableSurface: use count-1,  useCount=0 closed=true androidx.camera.core.impl.ImmediateSurface@484b5d0
+07-09 12:54:56.962  2748  2881 D DeferrableSurface: Surface no longer in use[total_surfaces=1, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@484b5d0}
+07-09 12:54:56.962  2748  2881 D DeferrableSurface: Surface terminated[total_surfaces=0, used_surfaces=0](androidx.camera.core.impl.ImmediateSurface@484b5d0}
+07-09 12:54:56.967  2748  2881 D Camera2CameraImpl: Attempt to reopen camera[0] after error[ERROR_CAMERA_IN_USE]
+07-09 12:54:56.970  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} Transitioning camera internal state: OPENED --> REOPENING
+07-09 12:54:56.972  2748  2881 D CameraStateRegistry: Recalculating open cameras:
+07-09 12:54:56.973  2748  2881 D CameraStateMachine: New public camera state CameraState{type=OPENING, error=StateError{code=2, cause=null}} from OPENING and StateError{code=2, cause=null}
+07-09 12:54:56.973  2748  2881 D CameraStateMachine: Publishing new public camera state CameraState{type=OPENING, error=StateError{code=2, cause=null}}
+07-09 12:54:56.976  2748  2881 D SyncCaptureSessionImpl: [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@943bdf5] Session call close()
+07-09 12:54:56.980  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} Use cases [androidx.camera.core.ImageCapture-64e5b4cd-e243-4255-9996-35583fe66067173022238, androidx.camera.core.ImageAnalysis-f08e86d9-8b63-48c0-b743-90502d9701a2165760255] now DETACHED for camera
+07-09 12:54:56.981  2748  2881 D UseCaseAttachState: All use case: [] for camera: 0
+07-09 12:54:56.983  2748  2881 D UseCaseAttachState: Active and attached use case: [] for camera: 0
+07-09 12:54:56.985  2748  2881 D UseCaseAttachState: Active and attached use case: [] for camera: 0
+07-09 12:54:56.987  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} Closing camera.
+07-09 12:54:56.987  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} Transitioning camera internal state: REOPENING --> CLOSING
+07-09 12:54:56.989  2748  2881 D CameraStateRegistry: Recalculating open cameras:
+07-09 12:54:56.989  2748  2881 D CameraStateMachine: New public camera state CameraState{type=CLOSING, error=null} from CLOSING and null
+07-09 12:54:56.990  2748  2881 D CameraStateMachine: Publishing new public camera state CameraState{type=CLOSING, error=null}
+07-09 12:54:56.993  2748  2881 E Camera2CameraImpl: CameraDevice.onError(): 0 failed with ERROR_CAMERA_DEVICE while in CLOSING state. Will finish closing camera.
+07-09 12:54:56.995  2748  2881 D SyncCaptureSessionImpl: [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@943bdf5] onClosed()
+07-09 12:54:56.997  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} closing camera
+07-09 12:54:56.999  2748  2881 D SyncCaptureSessionImpl: [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@943bdf5] Session call super.close()
+07-09 12:54:57.000  2748  2881 D UseCaseAttachState: Active and attached use case: [] for camera: 0
+07-09 12:54:57.005  2748  2881 D Camera2CameraImpl: {Camera@aff0717[id=0]} Transitioning camera internal state: CLOSING --> INITIALIZED
+07-09 12:54:57.007  2748  2881 D CameraStateRegistry: Recalculating open cameras:
+07-09 12:54:57.008  2748  2881 D CameraStateMachine: New public camera state CameraState{type=CLOSED, error=null} from CLOSED and null
+07-09 12:54:57.008  2748  2881 D CameraStateMachine: Publishing new public camera state CameraState{type=CLOSED, error=null}
+
+

@@ -1,0 +1,44 @@
+
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:919 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Camera Process Request Start
+07-09 12:54:51.527   308   308 D libcamera: DEBUG Request request.cpp:361 Created request - cookie: 12970367428648881808
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:943 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Queueing request 12970367428648881808 with 1 streams
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:976 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1026 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle streams
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1040 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': 0 - (640x480)[0x00000021] -> (640x480)[NV12] (mapped)
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL camera_device.cpp:1064 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped getBuffer()
+07-09 12:54:51.527   308   308 E libcamera: ERROR HAL camera_stream.cpp:234 CameraStream::getBuffer allocate: usage=51
+07-09 12:54:51.527   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:102 Private::allocate: pixelFormat=35 size=640x480 usage=51
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:128 Private::allocate: created fd=138 pixelFormat=NV12 stride=4096 numPlanes=2 numFds=3 numInts=32 dmaLength=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=141 len=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=142 len=462848
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:139 Private::allocate: fd info fd=143 len=4096
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:152 Private::allocate: planeInfo i=0 offset=0 size=307200
+07-09 12:54:51.528   308   308 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:152 Private::allocate: planeInfo i=1 offset=307200 size=153600
+07-09 12:54:51.528   308   308 D libcamera: DEBUG Buffer framebuffer.cpp:346 Buffer is contiguous
+
+...
+
+07-09 12:54:51.645   308   322 D libcamera: DEBUG Request request.cpp:122 Request(68:C:0/1:12970367428648881808)
+07-09 12:54:51.645   308   322 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367428648881808 completed with 1 streams
+07-09 12:54:51.645   308   322 D libcamera: DEBUG HAL camera_stream.cpp:188 Process...[type=Mapped]
+07-09 12:54:51.646   308   322 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=133 numplanes=2 size=640x480 flags=3 numFds=2
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video28[26:out]: Dequeuing buffer 1
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 2, timestamp: 309521608000
+07-09 12:54:51.646   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video21[27:out]: Dequeuing buffer 1
+07-09 12:54:51.646   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video26[28:cap]: Dequeuing buffer 1
+07-09 12:54:51.647   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video22[29:out]: Dequeuing buffer 0
+07-09 12:54:51.647   308   322 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video27[30:cap]: Dequeuing buffer 0
+07-09 12:54:51.647   308   322 D libcamera: DEBUG Event event_dispatcher_poll.cpp:216 next timer 0xb400007566e8cd30 expires in 0.989002037
+07-09 12:54:51.647   308  2900 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=138 length=460800 flags=1
+07-09 12:54:51.647   308  2900 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:160x90
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG JPEG post_processor_jpeg.cpp:103 Thumbnail compress returned 6769 bytes
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG EXIF exif.cpp:519 Created EXIF instance (7331 bytes)
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=138 length=460800 flags=1
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG HAL generic_camera_buffer.cpp:188 Mapping: fd=133 bufferLength=716800 flags=3
+07-09 12:54:51.648   308  2900 E libcamera: ERROR HAL generic_camera_buffer.cpp:198 Failed to mmap plane: fd=133 error=Permission denied
+07-09 12:54:51.648   308  2900 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:640x480
+07-09 12:54:51.666   308  2900 D libcamera: DEBUG HAL generic_camera_buffer.cpp:188 Mapping: fd=133 bufferLength=716800 flags=3
+07-09 12:54:51.666   308  2900 E libcamera: ERROR HAL generic_camera_buffer.cpp:198 Failed to mmap plane: fd=133 error=Permission denied
+07-09 12:54:51.688   308   322 D libcamera: DEBUG RPI pipeline_base.cpp:1357 Frame start 76
