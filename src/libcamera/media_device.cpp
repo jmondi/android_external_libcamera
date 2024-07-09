@@ -472,6 +472,7 @@ int MediaDevice::disableLinks()
  */
 int MediaDevice::open()
 {
+
 	if (fd_.isValid()) {
 		LOG(MediaDevice, Error) << "MediaDevice already open";
 		return -EBUSY;
@@ -485,6 +486,8 @@ int MediaDevice::open()
 			<< deviceNode_ << ": " << strerror(-ret);
 		return ret;
 	}
+
+	LOG(MediaDevice, Debug) << "Media opened: " << deviceNode_ << " fd=" << fd_.get();
 
 	return 0;
 }

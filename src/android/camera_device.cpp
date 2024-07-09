@@ -385,6 +385,8 @@ int CameraDevice::initialize(const CameraConfigData *cameraConfigData)
  */
 int CameraDevice::open(const hw_module_t *hardwareModule)
 {
+	LOG(HAL, Debug) << "Open camera: " << camera_->id();
+
 	int ret = camera_->acquire();
 	if (ret) {
 		LOG(HAL, Error) << "Failed to acquire the camera";
@@ -526,6 +528,8 @@ int CameraDevice::configureStreams(camera3_stream_configuration_t *stream_list)
 	/* Before any configuration attempt, stop the camera. */
 	stop();
 
+	LOG(HAL, Debug) << "configure Stream start";
+
 	if (stream_list->num_streams == 0) {
 		LOG(HAL, Error) << "No streams in configuration";
 		return -EINVAL;
@@ -565,7 +569,7 @@ int CameraDevice::configureStreams(camera3_stream_configuration_t *stream_list)
 
 		PixelFormat format = capabilities_.toPixelFormat(stream->format);
 
-		LOG(HAL, Info) << "Stream #" << i
+		LOG(HAL, Debug) << "Stream #" << i
 			       << ", direction: " << directionToString(stream->stream_type)
 			       << ", width: " << stream->width
 			       << ", height: " << stream->height
@@ -632,7 +636,7 @@ int CameraDevice::configureStreams(camera3_stream_configuration_t *stream_list)
 			    cfg.size.height != jpegStream->height)
 				continue;
 
-			LOG(HAL, Info)
+			LOG(HAL, Debug)
 				<< "Android JPEG stream mapped to libcamera stream " << i;
 
 			type = CameraStream::Type::Mapped;
@@ -664,7 +668,7 @@ int CameraDevice::configureStreams(camera3_stream_configuration_t *stream_list)
 			streamConfig.config.pixelFormat = formats::NV12;
 			streamConfigs.push_back(std::move(streamConfig));
 
-			LOG(HAL, Info) << "Adding " << streamConfig.config.toString()
+			LOG(HAL, Debug) << "Adding " << streamConfig.config.toString()
 				       << " for MJPEG support";
 
 			type = CameraStream::Type::Internal;
@@ -748,6 +752,8 @@ std::unique_ptr<HALFrameBuffer>
 CameraDevice::createFrameBuffer(const buffer_handle_t camera3buffer,
 				PixelFormat pixelFormat, const Size &size)
 {
+	LOG(HAL, Debug) << "createFrameBuffer...";
+
 	CameraBuffer buf(camera3buffer, pixelFormat, size, PROT_READ);
 	if (!buf.isValid()) {
 		LOG(HAL, Fatal) << "Failed to create CameraBuffer";
@@ -761,6 +767,10 @@ CameraDevice::createFrameBuffer(const buffer_handle_t camera3buffer,
 			LOG(HAL, Fatal) << "No valid fd";
 			return nullptr;
 		}
+
+		LOG(HAL, Debug) << "createFrameBuffer fd=" << fd.get()
+						<< "offset=" << buf.offset(i)
+						<< "length=" << buf.size(i);
 
 		planes[i].fd = fd;
 		planes[i].offset = buf.offset(i);
@@ -905,6 +915,9 @@ bool CameraDevice::isValidRequest(camera3_capture_request_t *camera3Request) con
 
 int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Request)
 {
+
+	LOG(HAL, Debug) << "Camera Process Request Start";
+
 	if (!isValidRequest(camera3Request))
 		return -EINVAL;
 
@@ -960,10 +973,12 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 
 		switch (cameraStream->type()) {
 		case CameraStream::Type::Mapped:
+			LOG(HAL, Debug) << "processCaptureRequest mapped";
 			/* Mapped streams will be handled in the next loop. */
 			continue;
 
 		case CameraStream::Type::Direct:
+			LOG(HAL, Debug) << "processCaptureRequest direct";
 			/*
 			 * Create a libcamera buffer using the dmabuf
 			 * descriptors of the camera3Buffer for each stream and
@@ -1008,6 +1023,8 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		requestedStreams.insert(cameraStream);
 	}
 
+	LOG(HAL, Debug) << "processCaptureRequest handle streams";
+
 	/*
 	 * Now handle the Mapped streams. If no buffer has been added for them
 	 * because their corresponding direct source stream is not part of this
@@ -1043,6 +1060,8 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		 * If that's not the case, we need to add a buffer to the request
 		 * for this stream.
 		 */
+		// JZ: This will create the buffer
+		LOG(HAL, Debug) << "processCaptureRequest mapped getBuffer()";
 		FrameBuffer *frameBuffer = cameraStream->getBuffer();
 		buffer.internalBuffer = frameBuffer;
 
