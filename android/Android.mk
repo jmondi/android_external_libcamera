@@ -16,6 +16,7 @@ include $(CLEAR_VARS)
 
 LOCAL_SHARED_LIBRARIES := libc libexif libjpeg libdl libyaml libyuv_chromium libudev libevent libcrypto
 MESON_GEN_PKGCONFIGS := libexif libjpeg dl yaml-0.1 libyuv libudev libevent_pthreads libcrypto
+LOCAL_LDLIBS := -lui
 
 ifeq ($(BOARD_LIBCAMERA_PIPELINES),rpi/pisp)
 LOCAL_HEADER_LIBRARIES += libpisp_headers
