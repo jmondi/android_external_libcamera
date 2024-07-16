@@ -74,7 +74,7 @@ CameraBuffer::Private::Private([[maybe_unused]] CameraBuffer *cameraBuffer,
 
 	fd_ = camera3Buffer->data[0];
 
-	// auto cros_handle = reinterpret_cast<cros_gralloc_handle_t>(camera3Buffer);
+	auto cros_handle = reinterpret_cast<cros_gralloc_handle_t>(camera3Buffer);
 
 	LOG(HAL, Debug) << "Create Buffer name=" << info.name 
 					<< " fd=" << fd_
@@ -82,6 +82,28 @@ CameraBuffer::Private::Private([[maybe_unused]] CameraBuffer *cameraBuffer,
 					<< " size=" << size
 					<< " flags=" << flags_
 					<< " numFds=" << camera3Buffer->numFds;
+
+	LOG(HAL, Debug) << "Cros layout"
+					<< " id=" << cros_handle->id
+					<< " width=" << cros_handle->width
+					<< " height=" << cros_handle->height
+					<< " user_flags=" << cros_handle->use_flags
+					<< " usage=" << cros_handle->usage
+					<< " format=" << cros_handle->format
+					<< " num_planes=" << cros_handle->num_planes
+					<< " totalsize=" << cros_handle->total_size;
+
+	for(int i=0; i<cros_handle->numFds; i++) {
+		LOG(HAL, Debug) << "FD DATA Index=" << i
+						<< " FD=" << cros_handle->fds[i];
+	}
+
+	for(int i=0; i<cros_handle->num_planes; i++) {
+		LOG(HAL, Debug) << "PLANE DATA Index=" << i
+						<< " size=" << cros_handle->sizes[i]
+						<< " offset=" << cros_handle->offsets[i]
+						<< " stride=" << cros_handle->strides[i];
+	}
 
 	/*
 	 * As Android doesn't offer an API to query buffer layouts, assume for
@@ -108,15 +130,15 @@ CameraBuffer::Private::Private([[maybe_unused]] CameraBuffer *cameraBuffer,
 		return;
 	}
 
-	const unsigned int numPlanes = info.numPlanes();
+	const unsigned int numPlanes = cros_handle->num_planes;//info.numPlanes();
 	planeInfo_.resize(numPlanes);
 	unsigned int offset = 0;
 	
 	for (unsigned int i = 0; i < numPlanes; ++i) {
-		const unsigned int planeSize = info.planeSize(size, i);
+		const unsigned int planeSize = cros_handle->sizes[i];//info.planeSize(size, i);
 
-		planeInfo_[i].stride = info.stride(size.width, i, 1u);
-		planeInfo_[i].offset = offset;
+		planeInfo_[i].stride = cros_handle->strides[i];//info.stride(size.width, i, 1u);
+		planeInfo_[i].offset = cros_handle->offsets[i];//offset;
 		planeInfo_[i].size = planeSize;
 
 		if (bufferLength_ < offset + planeSize) {

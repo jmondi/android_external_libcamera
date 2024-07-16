@@ -31,11 +31,14 @@ LOG_DEFINE_CATEGORY(JPEG)
 PostProcessorJpeg::PostProcessorJpeg(CameraDevice *const device)
 	: cameraDevice_(device)
 {
+	LOG(JPEG, Debug) << "PostProcessorJpeg::configure create!";
 }
 
 int PostProcessorJpeg::configure(const StreamConfiguration &inCfg,
 				 const StreamConfiguration &outCfg)
 {
+	LOG(JPEG, Debug) << "PostProcessorJpeg::configure start";
+
 	if (inCfg.size != outCfg.size) {
 		LOG(JPEG, Error) << "Mismatch of input and output stream sizes";
 		return -EINVAL;
@@ -56,6 +59,7 @@ int PostProcessorJpeg::configure(const StreamConfiguration &inCfg,
 	encoder_ = std::make_unique<EncoderLibJpeg>();
 #endif
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::configure ->encoder";
 	return encoder_->configure(inCfg);
 }
 
@@ -113,7 +117,13 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 	const FrameBuffer &source = *streamBuffer->srcBuffer;
 	CameraBuffer *destination = streamBuffer->dstBuffer.get();
 
-	ASSERT(destination->numPlanes() == 1);
+	LOG(JPEG, Debug)
+		<< "PostProcessorJpeg::process streamBuffer=" << streamBuffer 
+		<< " source=" << &source
+		<<" destination=" << destination
+		<<" planes=" << destination->numPlanes();
+
+	//ASSERT(destination->numPlanes() == 1);
 
 	const CameraMetadata &requestMetadata = streamBuffer->request->settings_;
 	CameraMetadata *resultMetadata = streamBuffer->request->resultMetadata_.get();
@@ -145,6 +155,8 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 	if (ret)
 		exif.setAperture(*entry.data.f);
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #1";
+
 	ret = resultMetadata->getEntry(ANDROID_SENSOR_SENSITIVITY, &entry);
 	exif.setISO(ret ? *entry.data.i32 : 100);
 
@@ -153,12 +165,16 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 
 	exif.setFocalLength(1.0);
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #2";
+
 	ret = requestMetadata.getEntry(ANDROID_JPEG_GPS_TIMESTAMP, &entry);
 	if (ret) {
 		exif.setGPSDateTimestamp(*entry.data.i64);
 		resultMetadata->addEntry(ANDROID_JPEG_GPS_TIMESTAMP,
 					 *entry.data.i64);
 	}
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #3";
 
 	ret = requestMetadata.getEntry(ANDROID_JPEG_THUMBNAIL_SIZE, &entry);
 	if (ret) {
@@ -180,12 +196,16 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 		resultMetadata->addEntry(ANDROID_JPEG_THUMBNAIL_SIZE, data, 2);
 	}
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #4";
+
 	ret = requestMetadata.getEntry(ANDROID_JPEG_GPS_COORDINATES, &entry);
 	if (ret) {
 		exif.setGPSLocation(entry.data.d);
 		resultMetadata->addEntry(ANDROID_JPEG_GPS_COORDINATES,
 					 entry.data.d, 3);
 	}
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #5";
 
 	ret = requestMetadata.getEntry(ANDROID_JPEG_GPS_PROCESSING_METHOD, &entry);
 	if (ret) {
@@ -195,6 +215,8 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 					 entry.data.u8, entry.count);
 	}
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #6";
+
 	if (exif.generate() != 0)
 		LOG(JPEG, Error) << "Failed to generate valid EXIF data";
 
@@ -202,6 +224,7 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 	const uint8_t quality = ret ? *entry.data.u8 : 95;
 	resultMetadata->addEntry(ANDROID_JPEG_QUALITY, quality);
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process encode";
 	int jpeg_size = encoder_->encode(streamBuffer, exif.data(), quality);
 	if (jpeg_size < 0) {
 		LOG(JPEG, Error) << "Failed to encode stream image";
@@ -209,15 +232,32 @@ void PostProcessorJpeg::process(Camera3RequestDescriptor::StreamBuffer *streamBu
 		return;
 	}
 
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #7";
+
 	/* Fill in the JPEG blob header. */
 	uint8_t *resultPtr = destination->plane(0).data()
 			   + destination->jpegBufferSize(cameraDevice_->maxJpegBufferSize())
 			   - sizeof(struct camera3_jpeg_blob);
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #8";
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process dataPtr=" << destination->plane(0).data()
+					<< " Size=" << destination->plane(0).size()
+					<< " JPEG Size=" << destination->jpegBufferSize(cameraDevice_->maxJpegBufferSize());
+
 	auto *blob = reinterpret_cast<struct camera3_jpeg_blob *>(resultPtr);
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process resultPtr=" << resultPtr
+			<< " blob=" << blob 
+			<< " JPEGSIZE=" << jpeg_size;
+
 	blob->jpeg_blob_id = CAMERA3_JPEG_BLOB_ID;
 	blob->jpeg_size = jpeg_size;
+
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process #9";
 
 	/* Update the JPEG result Metadata. */
 	resultMetadata->addEntry(ANDROID_JPEG_SIZE, jpeg_size);
 	processComplete.emit(streamBuffer, PostProcessor::Status::Success);
+	LOG(JPEG, Debug) << "PostProcessorJpeg::process complete";
 }

@@ -1,0 +1,26 @@
+07-16 15:16:44.481  3322  3323 D libcamera: DEBUG HAL camera_device.cpp:1182 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Request 12970367446461079408 completed with 1 streams
+07-16 15:16:44.481  3322  3323 D libcamera: DEBUG HAL camera_stream.cpp:188 Process...[type=Mapped]
+07-16 15:16:44.482  3322  3323 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=125 numplanes=2 size=640x480 flags=3 numFds=2
+07-16 15:16:44.482  3322  3323 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=309 width=716209 height=1 user_flags=2560 usage=51 format=538982482 num_planes=1 totalsize=717888
+07-16 15:16:44.483  3322  3323 D libcamera: DEBUG HAL generic_camera_buffer.cpp:97 FD DATA Index=0 FD=125
+07-16 15:16:44.483  3322  3323 D libcamera: DEBUG HAL generic_camera_buffer.cpp:97 FD DATA Index=1 FD=126
+07-16 15:16:44.484  3322  3323 D libcamera: DEBUG HAL generic_camera_buffer.cpp:102 PLANE DATA Index=0 size=716800 offset=0 stride=4096
+07-16 15:16:44.484  3322  3323 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-16 15:16:44.484  3322  3614 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=130 length=460800 flags=1
+07-16 15:16:44.486  3322  3323 D libcamera: DEBUG RPI pisp.cpp:2286 Signalling IPA processStats and prepareIsp: Bayer buffer id: 2 Stats buffer id: 2 Embedded buffer id: 2
+07-16 15:16:44.486  3322  3614 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:160x90
+07-16 15:16:44.487  3322  3323 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video37[26:out]: Dequeuing buffer 0
+07-16 15:16:44.487  3322  3615 D libcamera: DEBUG IPARPI ipa_base.cpp:1283 Metadata - Exposure: 56746.10us Frame length: 6184 Line length: 9.21us Gain: 2 Lens: 1
+07-16 15:16:44.487  3322  3614 D libcamera: DEBUG JPEG post_processor_jpeg.cpp:103 Thumbnail compress returned 7359 bytes
+07-16 15:16:44.488  3322  3614 D libcamera: DEBUG EXIF exif.cpp:519 Created EXIF instance (7921 bytes)
+07-16 15:16:44.487  3322  3323 D libcamera: DEBUG RPI pisp.cpp:1745 Stream ISP Config buffer complete, buffer id 1, timestamp: 2002351632000
+07-16 15:16:44.488  3322  3615 D libcamera: DEBUG IPARPI cam_helper_imx708.cpp:113 Embedded buffer size: 28800
+07-16 15:16:44.488  3322  3614 D libcamera: DEBUG Buffer mapped_framebuffer.cpp:227 MappedFrameBuffer mmap plane: fd=130 length=460800 flags=1
+07-16 15:16:44.488  3322  3323 D libcamera: DEBUG RPI pipeline_base.cpp:1412 Returning buffer to stream ISP Config
+07-16 15:16:44.489  3322  3614 D libcamera: DEBUG HAL generic_camera_buffer.cpp:210 Mapping: fd=125 bufferLength=716800 flags=3
+07-16 15:16:44.489  3322  3615 D libcamera: DEBUG IPARPI cam_helper.cpp:251 Metadata updated - Exposure: 56506.67us Frame length: 6184 Line length: 9.21us Gain: 2 Lens: 1 Temperature: 27
+07-16 15:16:44.489  3322  3323 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video30[27:out]: Dequeuing buffer 0
+07-16 15:16:44.490  3322  3614 E libcamera: ERROR HAL generic_camera_buffer.cpp:220 Failed to mmap plane: fd=125 error=Permission denied
+07-16 15:16:44.490  3322  3323 D libcamera: DEBUG V4L2 v4l2_videodevice.cpp:1764 /dev/video35[28:cap]: Dequeuing buffer 0
+07-16 15:16:44.490  3322  3615 D libcamera: DEBUG RPiLux lux.cpp:96 : estimated lux 123.811
+07-16 15:16:44.490  3322  3614 D libcamera: DEBUG JPEG encoder_libjpeg.cpp:226 JPEG Encode Starting:640x480

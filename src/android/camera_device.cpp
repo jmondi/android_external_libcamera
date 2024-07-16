@@ -769,8 +769,8 @@ CameraDevice::createFrameBuffer(const buffer_handle_t camera3buffer,
 		}
 
 		LOG(HAL, Debug) << "createFrameBuffer fd=" << fd.get()
-						<< "offset=" << buf.offset(i)
-						<< "length=" << buf.size(i);
+						<< " offset=" << buf.offset(i)
+						<< " ength=" << buf.size(i);
 
 		planes[i].fd = fd;
 		planes[i].offset = buf.offset(i);

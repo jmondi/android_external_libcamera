@@ -195,7 +195,7 @@ int CameraStream::process(Camera3RequestDescriptor::StreamBuffer *streamBuffer)
 	const StreamConfiguration &output = configuration();
 	streamBuffer->dstBuffer = std::make_unique<CameraBuffer>(
 		*streamBuffer->camera3Buffer, output.pixelFormat, output.size,
-		PROT_READ | PROT_WRITE);
+		PROT_WRITE);
 	if (!streamBuffer->dstBuffer->isValid()) {
 		LOG(HAL, Error) << "Failed to create destination buffer";
 		return -EINVAL;
