@@ -58,7 +58,7 @@ static int hal_set_torch_mode([[maybe_unused]] const char *camera_id,
  */
 static int hal_init()
 {
-	LOG(HAL, Info) << "Initialising Android camera HAL";
+	LOG(HAL, Debug) << "Initialising Android camera HAL";
 
 	CameraHalManager::instance()->init();
 

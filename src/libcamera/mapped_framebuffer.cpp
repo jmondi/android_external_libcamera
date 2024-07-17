@@ -223,12 +223,18 @@ MappedFrameBuffer::MappedFrameBuffer(const FrameBuffer *buffer, MapFlags flags)
 		const int fd = plane.fd.get();
 		auto &info = mappedBuffers[fd];
 		if (!info.address) {
+
+			LOG(Buffer, Debug) << "MappedFrameBuffer mmap plane: fd=" << fd
+						   << " length=" << info.mapLength
+						   << " flags=" << mmapFlags;
+
 			void *address = mmap(nullptr, info.mapLength, mmapFlags,
 					     MAP_SHARED, fd, 0);
+
 			if (address == MAP_FAILED) {
 				error_ = -errno;
-				LOG(Buffer, Error) << "Failed to mmap plane: "
-						   << strerror(-error_);
+				LOG(Buffer, Error) << "Failed to mmap plane: fd=" << fd
+						   << " error=" << strerror(-error_);
 				return;
 			}
 

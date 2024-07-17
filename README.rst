@@ -6,6 +6,13 @@
  libcamera
 ===========
 
+Development Branch for EvTrack
+------------------------------
+Branch mainly to resolve issues with image capturing from Android
+
+
+Introduction
+------------
 **A complex camera support library for Linux, Android, and ChromeOS**
 
 Cameras are complex devices that need heavy hardware image processing

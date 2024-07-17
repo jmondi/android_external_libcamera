@@ -92,7 +92,7 @@ CameraHalManager::open(unsigned int id, const hw_module_t *hardwareModule)
 	if (ret)
 		return { nullptr, ret };
 
-	LOG(HAL, Info) << "Open camera '" << id << "'";
+	LOG(HAL, Debug) << "Open camera '" << id << "'";
 
 	return { camera, 0 };
 }

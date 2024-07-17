@@ -96,6 +96,9 @@ int V4L2Device::open(unsigned int flags)
 		return ret;
 	}
 
+	LOG(V4L2, Debug) << "Opened device: " << deviceNode_.c_str()
+					<< " fd=" << fd.get();
+
 	setFd(std::move(fd));
 
 	return 0;

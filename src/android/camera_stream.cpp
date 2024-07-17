@@ -185,6 +185,13 @@ int CameraStream::process(Camera3RequestDescriptor::StreamBuffer *streamBuffer)
 		streamBuffer->fence.reset();
 	}
 
+	LOG(HAL, Debug) << "Process...[type=" 
+					<< ( (type_ == Type::Direct) ? 
+						"Direct" : 
+						( (type_ == Type::Internal) ? 
+							"Internal" : "Mapped") )
+					<< "]";
+
 	const StreamConfiguration &output = configuration();
 	streamBuffer->dstBuffer = std::make_unique<CameraBuffer>(
 		*streamBuffer->camera3Buffer, output.pixelFormat, output.size,
@@ -224,6 +231,7 @@ FrameBuffer *CameraStream::getBuffer()
 		 * \todo Store a reference to the format of the source stream
 		 * instead of hardcoding.
 		 */
+		LOG(HAL, Error) << "CameraStream::getBuffer allocate: usage=" << camera3Stream_->usage;
 		auto frameBuffer = allocator_->allocate(HAL_PIXEL_FORMAT_YCBCR_420_888,
 							configuration().size,
 							camera3Stream_->usage);
