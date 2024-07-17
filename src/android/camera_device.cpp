@@ -26,6 +26,8 @@
 
 #include "system/graphics.h"
 
+#include "mm/cros_gralloc_handle.h"
+
 #include "camera_buffer.h"
 #include "camera_hal_config.h"
 #include "camera_ops.h"
@@ -1037,7 +1039,7 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		if (cameraStream->type() != CameraStream::Type::Mapped)
 			continue;
 
-		LOG(HAL, Debug) << i << " - (" << camera3Stream->width << "x"
+		LOG(HAL, Debug) << "processCaptureRequest bufidx=" << i << " - (" << camera3Stream->width << "x"
 				<< camera3Stream->height << ")"
 				<< "[" << utils::hex(camera3Stream->format) << "] -> "
 				<< "(" << cameraStream->configuration().size << ")["
@@ -1056,6 +1058,15 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		if (requestedStreams.find(sourceStream) != requestedStreams.end())
 			continue;
 
+		/* debug output buffer */
+		auto cros_handle = reinterpret_cast<cros_gralloc_handle_t>(*buffer.camera3Buffer);
+
+		LOG(HAL, Debug) << "processCaptureRequest handle =" << *buffer.camera3Buffer
+					<< " id=" << cros_handle->id
+					<< " width=" << cros_handle->width
+					<< " height=" << cros_handle->height
+					<< " numPlanes=" << cros_handle->num_planes;
+
 		/*
 		 * If that's not the case, we need to add a buffer to the request
 		 * for this stream.
@@ -1063,6 +1074,7 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		// JZ: This will create the buffer
 		LOG(HAL, Debug) << "processCaptureRequest mapped getBuffer()";
 		FrameBuffer *frameBuffer = cameraStream->getBuffer();
+
 		buffer.internalBuffer = frameBuffer;
 
 		descriptor->request_->addBuffer(sourceStream->stream(),

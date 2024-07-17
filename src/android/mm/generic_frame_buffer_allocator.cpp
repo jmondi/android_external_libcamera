@@ -131,6 +131,7 @@ PlatformFrameBufferAllocator::Private::allocate(int halPixelFormat,
 	
 	LOG(HAL, Debug) << "Private::allocate: created fd=" << fd.get() 
 					<< " pixelFormat=" << info.name 
+					<< " id=" << cros_handle->id
 					<< " width=" << cros_handle->width
 					<< " height=" << cros_handle->height
 					<< " req stride=" << stride

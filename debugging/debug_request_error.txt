@@ -1,0 +1,32 @@
+
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:921 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Camera Process Request Start
+07-17 11:00:45.024   310   310 D libcamera: DEBUG Request request.cpp:361 Created request - cookie: 12970367417600819536
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:945 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Queueing request 12970367417600819536 with 1 streams
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:978 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:1028 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle streams
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:1042 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest bufidx=0 - (640x480)[0x00000021] -> (640x480)[NV12] (mapped)
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:1064 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest handle=0xb40000724465b230 id=217 width=716209 height=1 numPlanes=1
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL camera_device.cpp:1075 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': processCaptureRequest mapped getBuffer()
+07-17 11:00:45.024   310   310 E libcamera: ERROR HAL camera_stream.cpp:234 CameraStream::getBuffer allocate: usage=51
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:103 Private::allocate: pixelFormat=35 size=640x480 usage=51
+07-17 11:00:45.024   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:132 Private::allocate: created fd=138 pixelFormat=NV12 id=218 width=640 height=480 req stride=4096 numPlanes=2 numFds=3 numInts=32 dmaLength=462848
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:146 Private::allocate: fd info fd=141 len=462848
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:146 Private::allocate: fd info fd=142 len=462848
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:146 Private::allocate: fd info fd=143 len=4096
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:151 Private::allocate: PLANE DATA Index=0 size=307200 offset=0 stride=640
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:151 Private::allocate: PLANE DATA Index=1 size=153600 offset=307200 stride=640
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:167 Private::allocate: planeInfo i=0 offset=0 size=307200
+07-17 11:00:45.025   310   310 D libcamera: DEBUG HAL generic_frame_buffer_allocator.cpp:167 Private::allocate: planeInfo i=1 offset=307200 size=153600
+
+
+
+
+
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL camera_stream.cpp:188 Process...[type=Mapped]
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL generic_camera_buffer.cpp:79 Create Buffer name=NV12 fd=133 numplanes=2 size=640x480 flags=3 numFds=2
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=217 width=716209 height=1 user_flags=2560 usage=51 format=538982482 num_planes=1 totalsize=717888
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL generic_camera_buffer.cpp:97 FD DATA Index=0 FD=133
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL generic_camera_buffer.cpp:97 FD DATA Index=1 FD=134
+07-17 11:00:45.060   310   324 D libcamera: DEBUG HAL generic_camera_buffer.cpp:102 PLANE DATA Index=0 size=716800 offset=0 stride=4096
+07-17 11:00:45.060   310   324 D libcamera: DEBUG RPI pipeline_base.cpp:1472 Going into Idle state
+07-17 11:00:45.060   310  3047 D libcamera: DEBUG JPEG post_processor_jpeg.cpp:120 PostProcessorJpeg::process streamBuffer=0xb400007154668550 source=0xb4000071b46622f0 destination=0xb400007174655cf0 planes=1

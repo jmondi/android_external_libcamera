@@ -99,5 +99,7 @@ camera3_device_ops hal_dev_ops = {
 	.get_metadata_vendor_tag_ops = nullptr,
 	.dump = hal_dev_dump,
 	.flush = hal_dev_flush,
+	.signal_stream_flush = nullptr,
+	.is_reconfiguration_required = nullptr,
 	.reserved = { nullptr },
 };
