@@ -1,0 +1,34 @@
+
+
+Setup for YUV_420_888 - working solution
+---------------------
+07-22 08:47:43.611   306   306 D libcamera: DEBUG HAL camera_device.cpp:574 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Stream #0, direction: Output, width: 1600, height: 1200, format: 0x00000023, rotation: 0 (NV12)
+07-22 08:47:43.611   306   306 D libcamera: DEBUG HAL camera_device.cpp:574 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Stream #1, direction: Output, width: 640, height: 480, format: 0x00000023, rotation: 0 (NV12)
+...
+
+Streaming
+07-22 08:50:49.681   306   533 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=188 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:50:49.735   306  2616 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=186 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:50:49.814   306   306 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=189 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:50:49.856   306  2616 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=187 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:50:49.914   306   533 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=188 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:50:50.007   306  2616 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=185 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+
+Capture image
+07-22 08:50:50.011   306   533 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=193 width=1600 height=1200 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=2884672
+
+
+
+Setup JPEG - Not working
+-------------------------
+07-22 08:55:33.451   306   533 D libcamera: DEBUG HAL camera_device.cpp:574 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Stream #0, direction: Output, width: 1600, height: 1200, format: 0x00000021, rotation: 0 (MJPEG)
+07-22 08:55:33.451   306   533 D libcamera: DEBUG HAL camera_device.cpp:574 '/base/axi/pcie@120000/rp1/i2c@88000/imx708@1a': Stream #1, direction: Output, width: 640, height: 480, format: 0x00000023, rotation: 0 (NV12)
+
+Streaming
+07-22 08:55:36.889   306  2616 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=291 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:55:36.941   306   533 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=289 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+07-22 08:55:37.005   306   306 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=288 width=640 height=480 user_flags=576 usage=131075 format=842094158 num_planes=2 totalsize=463936
+
+Capture image
+07-22 08:55:37.058   306   320 D libcamera: DEBUG HAL generic_camera_buffer.cpp:86 Cros layout id=292 width=3100010 height=1 user_flags=2560 usage=51 format=538982482 num_planes=1 totalsize=3101760
+

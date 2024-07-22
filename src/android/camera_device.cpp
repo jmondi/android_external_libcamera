@@ -956,14 +956,19 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 	for (const auto &[i, buffer] : utils::enumerate(descriptor->buffers_)) {
 		CameraStream *cameraStream = buffer.stream;
 		camera3_stream_t *camera3Stream = cameraStream->camera3Stream();
+		/* debug output buffer */
+		auto cros_handle = reinterpret_cast<cros_gralloc_handle_t>(*buffer.camera3Buffer);
 
 		std::stringstream ss;
 		ss << i << " - (" << camera3Stream->width << "x"
 		   << camera3Stream->height << ")"
 		   << "[" << utils::hex(camera3Stream->format) << "] -> "
 		   << "(" << cameraStream->configuration().size << ")["
-		   << cameraStream->configuration().pixelFormat << "]";
-
+		   << cameraStream->configuration().pixelFormat << "]"
+		   << " CROS Layout id=" << cros_handle->id
+		   << " width=" << cros_handle->width
+			<< " height=" << cros_handle->height
+			<< " numPlanes=" << cros_handle->num_planes;
 		/*
 		 * Inspect the camera stream type, create buffers opportunely
 		 * and add them to the Request if required.
@@ -975,12 +980,12 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 
 		switch (cameraStream->type()) {
 		case CameraStream::Type::Mapped:
-			LOG(HAL, Debug) << "processCaptureRequest mapped";
+			LOG(HAL, Debug) << "processCaptureRequest mapped " << ss.str();
 			/* Mapped streams will be handled in the next loop. */
 			continue;
 
 		case CameraStream::Type::Direct:
-			LOG(HAL, Debug) << "processCaptureRequest direct";
+			LOG(HAL, Debug) << "processCaptureRequest direct start";
 			/*
 			 * Create a libcamera buffer using the dmabuf
 			 * descriptors of the camera3Buffer for each stream and
@@ -993,7 +998,7 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 						  cameraStream->configuration().size);
 			frameBuffer = buffer.frameBuffer.get();
 			acquireFence = std::move(buffer.fence);
-			LOG(HAL, Debug) << ss.str() << " (direct)";
+			LOG(HAL, Debug) << "processCaptureRequest " << ss.str() << " (direct)";
 			break;
 
 		case CameraStream::Type::Internal:
@@ -1006,7 +1011,7 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 			 */
 			frameBuffer = cameraStream->getBuffer();
 			buffer.internalBuffer = frameBuffer;
-			LOG(HAL, Debug) << ss.str() << " (internal)";
+			LOG(HAL, Debug) << "processCaptureRequest " << ss.str() << " (internal)";
 
 			descriptor->pendingStreamsToProcess_.insert(
 				{ cameraStream, &buffer });
@@ -1057,15 +1062,6 @@ int CameraDevice::processCaptureRequest(camera3_capture_request_t *camera3Reques
 		ASSERT(sourceStream);
 		if (requestedStreams.find(sourceStream) != requestedStreams.end())
 			continue;
-
-		/* debug output buffer */
-		auto cros_handle = reinterpret_cast<cros_gralloc_handle_t>(*buffer.camera3Buffer);
-
-		LOG(HAL, Debug) << "processCaptureRequest handle =" << *buffer.camera3Buffer
-					<< " id=" << cros_handle->id
-					<< " width=" << cros_handle->width
-					<< " height=" << cros_handle->height
-					<< " numPlanes=" << cros_handle->num_planes;
 
 		/*
 		 * If that's not the case, we need to add a buffer to the request
